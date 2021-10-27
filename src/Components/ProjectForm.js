@@ -12,7 +12,7 @@ const useStyles = makeStyles({
   btn: {
     borderRadius: 12,
     marginTop: 20
-  },
+  }
 });
 
 export default function ProjectForm() {
@@ -64,7 +64,7 @@ export default function ProjectForm() {
 
   return (
     <>
-      <Paper elevation={3}>
+      <Paper elevation={3} >
         {/* Name */}
         <TextField
           style={{ marginTop: 10 }}
