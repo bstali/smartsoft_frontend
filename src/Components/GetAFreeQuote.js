@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Button, Backdrop } from "@mui/material";
+import { Backdrop } from "@mui/material";
 import ProjectForm from "./ProjectForm";
 import { makeStyles } from "@mui/styles";
 import CloseIcon from "@mui/icons-material/Close";
@@ -19,8 +19,16 @@ const useStyles = makeStyles({
     marginBottom: 20,
   },
   closeIcon: {
-    cursor: "pointer"
-  }
+    cursor: "pointer",
+  },
+  quote: {
+    color: "white",
+    fontWeight: 400,
+    fontFamily: "Montserrat, Helvetica Neue, Helvetica, Arial, sans-serif",
+    float: "right",
+    margin: 0,
+    cursor: "pointer",
+  },
 });
 
 export default function GetAFreeQuote() {
@@ -36,18 +44,9 @@ export default function GetAFreeQuote() {
   };
   return (
     <>
-      <Button
-        variant="outlined"
-        onClick={handleClickOpen}
-        style={{
-          color: "white",
-          fontWeight: 400,
-          fontFamily:
-            "Montserrat, Helvetica Neue, Helvetica, Arial, sans-serif",
-        }}
-      >
+      <p onClick={handleClickOpen} className={classes.quote}>
         Get a Free Quote
-      </Button>
+      </p>
       <div>
         <Backdrop
           open={open}
@@ -55,7 +54,8 @@ export default function GetAFreeQuote() {
           sx={{ backgroundColor: "#2C94C5", display: "block", Opacity: 0.5 }}
         >
           <p className={classes.text}>
-            Get In Touch With The Team &nbsp;&nbsp; <CloseIcon className={classes.closeIcon}onClick={handleClose} />
+            Get In Touch With The Team &nbsp;&nbsp;{" "}
+            <CloseIcon className={classes.closeIcon} onClick={handleClose} />
           </p>
           <p className={classes.description}>
             Get free quote and consultation for your project

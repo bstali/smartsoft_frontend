@@ -50,7 +50,7 @@ const useStyles = makeStyles({
 export default function Contact() {
   const classes = useStyles();
   return (
-    <>
+    <div style={{backgroundColor: "#F5F5F5"}}>
       <h2 className={classes.topHeading}>Let's start your project</h2>
       <Grid container>
         <Grid item xs={4}></Grid>
@@ -93,6 +93,6 @@ export default function Contact() {
           </Grid>
         </Grid>
       </Grid>
-    </>
+    </div>
   );
 }
