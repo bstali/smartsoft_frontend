@@ -4,6 +4,10 @@ import { makeStyles } from "@mui/styles";
 import { Button, Grid } from "@mui/material";
 import Services from "../Components/Services";
 import MicroSoftServices from "../Components/MicroSoftServices";
+import NewsAndBlogs from "../Components/NewsAndBlogs";
+import AwardWinningProjects from "../Components/AwardWinningProject";
+import TechnologyAndBusiness from "../Components/TechnologyAndBusiness";
+
 
 const useStyles = makeStyles({
   topHeading: {
@@ -151,17 +155,20 @@ export default function Home() {
               <span className={classes.span}>+1 (800) 214-3513</span>
             </Grid>
             <Grid item xs={3}>
-            <img src="https://www.arpatech.com/img/tel-2.png" alt="chat" />
+              <img src="https://www.arpatech.com/img/tel-2.png" alt="chat" />
               <span className={classes.span}>Live Chat</span>
             </Grid>
             <Grid item xs={2}>
-            <img src="https://www.arpatech.com/img/tel-3.png" alt="email" />
+              <img src="https://www.arpatech.com/img/tel-3.png" alt="email" />
               <span className={classes.span}>Email Us</span>
             </Grid>
           </Grid>
         </Grid>
         <Grid item xs={1}></Grid>
       </Grid>
+      <NewsAndBlogs />
+      <AwardWinningProjects />
+      <TechnologyAndBusiness />
       <Contact />
     </div>
   );
