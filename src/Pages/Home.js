@@ -8,27 +8,10 @@ import NewsAndBlogs from "../Components/NewsAndBlogs";
 import AwardWinningProjects from "../Components/AwardWinningProject";
 import TechnologyAndBusiness from "../Components/TechnologyAndBusiness";
 import AboutCompany from "../Components/AboutCompany";
+import "./Animation.css";
+import Intro from "../Components/Intro";
 
 const useStyles = makeStyles({
-  topHeading: {
-    fontSize: 48,
-    fontFamily: "Montserrat, Helvetica Neue, Helvetica, Arial, sans-serif",
-    textTransform: "uppercase",
-  },
-  descriptionHeading: {
-    color: "#bdd030",
-    fontSize: 20,
-    fontWeight: 700,
-    fontFamily: "Montserrat",
-  },
-  description: {
-    fontFamily: "Montserrat",
-    textAlign: "center",
-    margin: "0 auto",
-    fontSize: 13,
-    fontWeight: 400,
-    width: "70%",
-  },
   midHeading: {
     fontSize: 45,
     color: "#333",
@@ -72,19 +55,9 @@ export default function Home() {
   return (
     <div style={{ backgroundColor: "#F5F5F5", paddingTop: 400 }}>
       <div>
-        <h1 className={classes.topHeading}>
-          WORLD'S FINEST <br />
-          TECHNOLOGY HUB
-        </h1>
-        <p className={classes.descriptionHeading}>We Are Pioneers</p>
-        <p className={classes.description}>
-          Smart Soft Studios – the finest technology hub kept innovating as more
-          people joined the global village and came closer with connectivity. We
-          are adding our bit to the world advanced research in technologies as
-          we embark on the future to continue to create better experiences.
-        </p>
+        <Intro />
       </div>
-      <div>
+      <div style={{marginTop: 80}}>
         <Button
           style={{
             marginTop: 20,
@@ -96,13 +69,19 @@ export default function Home() {
         >
           View Services
         </Button>
+        <img
+          className="object"
+          src="https://www.arpatech.com/img/bounce.png"
+          alt="mouse"
+        />
+
         <Button
           style={{
             marginTop: 20,
             marginBottom: 20,
+            marginLeft: 30,
             borderRadius: 12,
             textTransform: "uppercase",
-            marginLeft: 20,
           }}
           variant="contained"
         >

@@ -1,0 +1,16 @@
+.object {
+  animation: MoveUpDown 2s linear infinite;
+  position: absolute;
+  background-color: black;
+  margin-top: 100px;
+  cursor: pointer;
+}
+
+@keyframes MoveUpDown {
+  0%, 100% {
+    bottom: 0;
+  }
+  50% {
+    bottom: 50px;
+  }
+}
