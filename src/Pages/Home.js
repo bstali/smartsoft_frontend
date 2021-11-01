@@ -7,7 +7,7 @@ import MicroSoftServices from "../Components/MicroSoftServices";
 import NewsAndBlogs from "../Components/NewsAndBlogs";
 import AwardWinningProjects from "../Components/AwardWinningProject";
 import TechnologyAndBusiness from "../Components/TechnologyAndBusiness";
-
+import AboutCompany from "../Components/AboutCompany";
 
 const useStyles = makeStyles({
   topHeading: {
@@ -125,10 +125,10 @@ export default function Home() {
             methodology and run the project through a loop of feedback and
             constant improvement. Our specialized services also have:
           </p>
-          <Services />
         </Grid>
         <Grid item xs={2}></Grid>
       </Grid>
+      <Services />
       <MicroSoftServices />
       <Grid
         container
@@ -169,6 +169,7 @@ export default function Home() {
       <NewsAndBlogs />
       <AwardWinningProjects />
       <TechnologyAndBusiness />
+      <AboutCompany />
       <Contact />
     </div>
   );

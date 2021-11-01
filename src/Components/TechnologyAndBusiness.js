@@ -23,13 +23,7 @@ const useStyles = makeStyles({
     color: "#333333",
     letterSpacing: 6,
     margin: 0,
-  },
-  cardContent: {
-    fontFamily: "Montserrat",
-    fontWeight: 700,
-    fontSize: 10,
-    color: "inherit",
-  },
+  }
 });
 export default function TechnologyAndBusiness() {
   const classes = useStyles();
