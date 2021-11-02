@@ -8,7 +8,7 @@ import NewsAndBlogs from "../Components/NewsAndBlogs";
 import AwardWinningProjects from "../Components/AwardWinningProject";
 import TechnologyAndBusiness from "../Components/TechnologyAndBusiness";
 import AboutCompany from "../Components/AboutCompany";
-import "./Animation.css";
+import "./Home.css";
 import Intro from "../Components/Intro";
 
 const useStyles = makeStyles({
@@ -53,40 +53,37 @@ const useStyles = makeStyles({
 export default function Home() {
   const classes = useStyles();
   return (
-    <div style={{ backgroundColor: "#F5F5F5", paddingTop: 400 }}>
-      <div>
-        <Intro />
-      </div>
-      <div style={{marginTop: 80}}>
-        <Button
-          style={{
-            marginTop: 20,
-            marginBottom: 20,
-            borderRadius: 12,
-            textTransform: "uppercase",
-          }}
-          variant="contained"
-        >
-          View Services
-        </Button>
-        <img
-          className="object"
-          src="https://www.arpatech.com/img/bounce.png"
-          alt="mouse"
-        />
-
-        <Button
-          style={{
-            marginTop: 20,
-            marginBottom: 20,
-            marginLeft: 30,
-            borderRadius: 12,
-            textTransform: "uppercase",
-          }}
-          variant="contained"
-        >
-          View Portfolio
-        </Button>
+    <div style={{ backgroundColor: "#F5F5F5"}}>
+      <div className="homeBG" >
+        <div>
+          <Intro />
+        </div>
+        <div style={{ marginTop: 80 }}>
+          <Button
+            className="srvsBtn"
+            sx={{
+              bgcolor: "#bdd030",
+              color: "white",
+              borderRadius: 12,
+              minWidth: 200,
+              fontWeight: 700,
+            }}
+          >
+            View Services
+          </Button>
+          <Button
+            className="portfolioBtn"
+            sx={{
+              bgcolor: "white",
+              borderRadius: 12,
+              minWidth: 200,
+              fontWeight: 700,
+              marginLeft: 10,
+            }}
+          >
+            View Portfolio
+          </Button>
+        </div>
       </div>
       <Grid
         container

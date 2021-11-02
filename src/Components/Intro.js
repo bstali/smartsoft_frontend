@@ -1,5 +1,5 @@
+import React from "react";
 import { makeStyles } from "@mui/styles";
-import React, { Fragment } from "react";
 import Carousel from "react-material-ui-carousel";
 
 const useStyles = makeStyles({
@@ -57,12 +57,12 @@ export default function Intro() {
   ];
 
   return (
-    <Fragment>
+    <div style={{paddingTop: 200}}>
       <p className={classes.topHeading}>
         WORLD'S FINEST <br />
         TECHNOLOGY HUB
       </p>
-      <Carousel autoPlay={true}>
+      <Carousel interval={3000} autoPlay={true} animation="slide" IndicatorIcon={false}>
         {items.map((item) => 
         <div>
         <p className={classes.descriptionHeading}>{item.name}</p>
@@ -70,6 +70,6 @@ export default function Intro() {
         </div>
         )}
       </Carousel>
-    </Fragment>
+    </div>
   );
 }

@@ -1,6 +1,7 @@
+import React from "react";
 import { Grid, ImageList, ImageListItem } from "@mui/material";
 import { makeStyles } from "@mui/styles";
-import React from "react";
+import "../Pages/Home.css";
 
 const useStyles = makeStyles({
   headingTop: {
@@ -85,7 +86,7 @@ export default function AwardWinningProjects() {
     },
   ];
   return (
-    <div style={{paddingTop: 50}}>
+    <div style={{ paddingTop: 50 }}>
       <p className={classes.headingTop}>AWARD WINNING PROJECTS</p>
       <Grid
         container
@@ -93,18 +94,23 @@ export default function AwardWinningProjects() {
         justifyContent="center"
         alignItems="center"
       >
-        <ImageList sx={{ width: 1000, height: 950 }} cols={4}>
-          {itemData.map((item) => (
-            <ImageListItem key={item.img}>
-              <img
-                src={`${item.img}?w=164&h=164&fit=crop&auto=format`}
-                srcSet={`${item.img}?w=164&h=164&fit=crop&auto=format&dpr=2 2x`}
-                alt={item.title}
-                loading="lazy"
-              />
-            </ImageListItem>
-          ))}
-        </ImageList>
+        <Grid item xs={2}></Grid>
+        <Grid item xs={8}>
+          <ImageList sx={{ width: 1000, height: 950, overflow: "hidden", position:"relative" }} cols={4}>
+            {itemData.map((item) => (
+              <ImageListItem key={item.img}>
+                <img
+                  className="awardWinningImages"
+                  src={`${item.img}?w=164&h=164&fit=crop&auto=format`}
+                  srcSet={`${item.img}?w=164&h=164&fit=crop&auto=format&dpr=2 2x`}
+                  alt={item.title}
+                  loading="lazy"
+                />
+              </ImageListItem>
+            ))}
+          </ImageList>
+        </Grid>
+        <Grid item xs={2}></Grid>
       </Grid>
     </div>
   );

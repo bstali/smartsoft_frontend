@@ -12,6 +12,7 @@ import GroupIcon from "@mui/icons-material/Group";
 import BusinessCenterIcon from "@mui/icons-material/BusinessCenter";
 import AccessibilityNewIcon from "@mui/icons-material/AccessibilityNew";
 import AddBusinessIcon from "@mui/icons-material/AddBusiness";
+import "../Pages/Home.css";
 
 const useStyles = makeStyles({
   cardContent: {
@@ -27,21 +28,19 @@ export default function Services() {
       <Grid container>
         <Grid item xs={2}></Grid>
         <Grid item xs={8}>
-          <Grid
-            container
-            spacing={7}
-          >
+          <Grid container spacing={7}>
             <Grid item xs={4}>
               <Card
+                className="service1"
                 sx={{
                   width: 300,
                   height: 300,
-                  backgroundColor: "white",
                   border: "1px solid",
                   borderColor: "#bdd030",
                 }}
               >
                 <LaptopIcon
+                  className="icon1"
                   style={{ fontSize: 50, marginTop: 50, color: "#bdd030" }}
                 />
                 <h3>Web design & development</h3>
@@ -53,6 +52,7 @@ export default function Services() {
             </Grid>
             <Grid item xs={4}>
               <Card
+                className="service2"
                 sx={{
                   width: 300,
                   height: 300,
@@ -73,6 +73,7 @@ export default function Services() {
             </Grid>
             <Grid item xs={4}>
               <Card
+                className="service3"
                 sx={{
                   width: 300,
                   height: 300,
@@ -93,6 +94,7 @@ export default function Services() {
             </Grid>
             <Grid item xs={4}>
               <Card
+                className="service4"
                 sx={{
                   width: 300,
                   height: 300,
@@ -113,6 +115,7 @@ export default function Services() {
             </Grid>
             <Grid item xs={4}>
               <Card
+                className="service5"
                 sx={{
                   width: 300,
                   height: 300,
@@ -134,6 +137,7 @@ export default function Services() {
             </Grid>
             <Grid item xs={4}>
               <Card
+                className="service6"
                 sx={{
                   width: 300,
                   height: 300,
@@ -155,6 +159,7 @@ export default function Services() {
             </Grid>
             <Grid item xs={4}>
               <Card
+                className="service7"
                 sx={{
                   width: 300,
                   height: 300,
@@ -176,6 +181,7 @@ export default function Services() {
             </Grid>
             <Grid item xs={4}>
               <Card
+                className="service8"
                 sx={{
                   width: 300,
                   height: 300,
@@ -197,6 +203,7 @@ export default function Services() {
             </Grid>
             <Grid item xs={4}>
               <Card
+                className="service9"
                 sx={{
                   width: 300,
                   height: 300,
@@ -218,6 +225,7 @@ export default function Services() {
             </Grid>
             <Grid item xs={4}>
               <Card
+                className="service10"
                 sx={{
                   width: 300,
                   height: 300,
@@ -238,6 +246,7 @@ export default function Services() {
             </Grid>
             <Grid item xs={4}>
               <Card
+                className="service11"
                 sx={{
                   width: 300,
                   height: 300,
@@ -259,6 +268,7 @@ export default function Services() {
             </Grid>
             <Grid item xs={4}>
               <Card
+                className="service12"
                 sx={{
                   width: 300,
                   height: 300,
