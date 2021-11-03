@@ -2,13 +2,15 @@ import React from "react";
 import { makeStyles } from "@mui/styles";
 import { Grid } from "@mui/material";
 import ProjectForm from "../Components/ProjectForm";
+import "./Home.css";
 
 const useStyles = makeStyles({
   topHeading: {
-    marginTop: 90,
     fontSize: "53px",
     fontFamily: "Montserrat, Helvetica Neue, Helvetica, Arial, sans-serif",
     textTransform: "uppercase",
+    color: "white",
+    paddingTop: 50
   },
   officesHeading: {
     color: "#4a4a4a",
@@ -50,16 +52,19 @@ const useStyles = makeStyles({
 export default function Contact() {
   const classes = useStyles();
   return (
-    <div style={{backgroundColor: "#F5F5F5"}}>
-      <h2 className={classes.topHeading}>Let's start your project</h2>
-      <Grid container>
-        <Grid item xs={4}></Grid>
-        <Grid item xs={4}>
-          <ProjectForm />
+    <div style={{ backgroundColor: "#F5F5F5" }}>
+      <div className="homeBG">
+        <h2 className={classes.topHeading}>Let's start your project</h2>
+        <Grid container>
+          <Grid item xs={4}></Grid>
+          <Grid item xs={4}>
+            <ProjectForm />
+          </Grid>
+          <Grid item xs={4}></Grid>
         </Grid>
-        <Grid item xs={4}></Grid>
-      </Grid>
-      <Grid container style={{marginTop: 100}}>
+      </div>
+
+      <Grid container style={{ marginTop: 100 }}>
         <Grid item xs={4}></Grid>
         <Grid item xs={8}>
           <div>

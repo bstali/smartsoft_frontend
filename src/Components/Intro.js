@@ -7,6 +7,7 @@ const useStyles = makeStyles({
     fontSize: 48,
     fontFamily: "Montserrat, Helvetica Neue, Helvetica, Arial, sans-serif",
     textTransform: "uppercase",
+    color: "white"
   },
   descriptionHeading: {
     color: "#bdd030",
@@ -21,6 +22,7 @@ const useStyles = makeStyles({
     fontSize: 13,
     fontWeight: 400,
     width: "70%",
+    color: "white"
   },
 });
 export default function Intro() {
@@ -57,7 +59,7 @@ export default function Intro() {
   ];
 
   return (
-    <div style={{paddingTop: 200}}>
+    <div style={{paddingTop: 300}}>
       <p className={classes.topHeading}>
         WORLD'S FINEST <br />
         TECHNOLOGY HUB

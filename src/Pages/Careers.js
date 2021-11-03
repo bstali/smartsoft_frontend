@@ -3,15 +3,16 @@ import { makeStyles } from "@mui/styles";
 import Button from "@mui/material/Button";
 import { Grid } from "@mui/material";
 import JobTable from "../Components/JobTable";
+import "./Home.css";
 
 const useStyles = makeStyles({
   topHeading: {
-    marginTop: 400,
     fontSize: 48,
     fontFamily: "Montserrat, Helvetica Neue, Helvetica, Arial, sans-serif",
     textTransform: "uppercase",
     fontWeight: 700,
     margin: 0,
+    color: "white",
   },
   guidance: {
     fontFamily: "Montserrat, Helvetica Neue, Helvetica, Arial, sans-serif",
@@ -20,6 +21,7 @@ const useStyles = makeStyles({
     width: "80%",
     margin: "0 auto",
     lineHeight: 1.75,
+    color: "white",
   },
   button: {
     marginTop: 20,
@@ -37,26 +39,32 @@ export default function Career() {
   const classes = useStyles();
   return (
     <>
-      <p className={classes.topHeading}>Careers at Smart Soft Studios</p>
-      <p className={classes.guidance}>
-        We at Smart Soft Studios offer a mix of growth prospects, advance
-        learning, fair play and amazing work culture. Apply at
-        careers@smartsoftstudios.com with the subject of job title.
-      </p>
-      <Button
-        style={{
-          marginTop: 20,
-          marginBottom: 20,
-          borderRadius: 12,
-          textTransform: "uppercase",
-        }}
-        variant="contained"
-      >
-        See Vacanciecs
-      </Button>
+      <div className="homeBG">
+        <div style={{ paddingTop: 550 }}>
+          <p className={classes.topHeading}>Careers at Smart Soft Studios</p>
+          <p className={classes.guidance}>
+            We at Smart Soft Studios offer a mix of growth prospects, advance
+            learning, fair play and amazing work culture. Apply at
+            careers@smartsoftstudios.com with the subject of job title.
+          </p>
+          <Button
+            className="srvsBtn"
+            sx={{
+              bgcolor: "#bdd030",
+              color: "white",
+              borderRadius: 12,
+              minWidth: 200,
+              fontWeight: 700,
+              marginTop: 5
+            }}
+          >
+            See Vacanciecs
+          </Button>
+        </div>
+      </div>
       <Grid container>
         <Grid Item xs={1}></Grid>
-        <Grid Item xs={10} style={{marginBottom: 30}}>
+        <Grid Item xs={10} style={{ marginBottom: 30 }}>
           <p className={classes.tableHeader}>Job openings</p>
           <JobTable />
         </Grid>

@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Backdrop } from "@mui/material";
+import { Dialog, Slide } from "@mui/material";
 import ProjectForm from "./ProjectForm";
 import { makeStyles } from "@mui/styles";
 import CloseIcon from "@mui/icons-material/Close";
@@ -22,13 +22,17 @@ const useStyles = makeStyles({
     cursor: "pointer",
   },
   quote: {
-    color: "white",
     fontWeight: 400,
     fontFamily: "Montserrat, Helvetica Neue, Helvetica, Arial, sans-serif",
     float: "right",
     margin: 0,
     cursor: "pointer",
+    color: "black",
   },
+});
+
+const Transition = React.forwardRef(function Transition(props, ref) {
+  return <Slide direction="up" ref={ref} {...props} />;
 });
 
 export default function GetAFreeQuote() {
@@ -39,7 +43,7 @@ export default function GetAFreeQuote() {
     setOpen(true);
   };
 
-  const handleClose = (value) => {
+  const handleClose = () => {
     setOpen(false);
   };
   return (
@@ -48,10 +52,16 @@ export default function GetAFreeQuote() {
         Get a Free Quote
       </p>
       <div>
-        <Backdrop
+        <Dialog
           open={open}
           onClick={handleClose}
-          sx={{ backgroundColor: "#2C94C5", display: "block", Opacity: 0.5 }}
+          TransitionComponent={Transition}
+          sx={{
+            backgroundColor: "",
+            display: "block",
+            boxShadow: "inset 0 0 0 1000px #00aeffc9",
+            zIndex: 2,
+          }}
         >
           <p className={classes.text}>
             Get In Touch With The Team &nbsp;&nbsp;{" "}
@@ -61,7 +71,7 @@ export default function GetAFreeQuote() {
             Get free quote and consultation for your project
           </p>
           <ProjectForm />
-        </Backdrop>
+        </Dialog>
       </div>
     </>
   );

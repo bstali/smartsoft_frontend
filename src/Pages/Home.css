@@ -16,19 +16,16 @@
   }
 }
 
-.srvsBtn {
-  margin-top: 20;
-  margin-bottom: 20;
-  text-transform: uppercase;
-}
-
 .srvsBtn:hover {
-  background-color: rgb(255, 255, 255);
+  border: 1px solid white;
+  transition: background 0.5s;
+  background-color: white;
   color: #bdd030;
 }
 
 .portfolioBtn:hover {
-  background-color: white;
+  background: rgb(255, 255, 255);
+  transition: background 0.5s;
   color: #bdd030;
 }
 
@@ -36,7 +33,7 @@
   background-image: url("https://www.arpatech.com/img/about/ser1.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  transition: all .3s linear;
+  transition: all 0.3s linear;
   color: white;
   cursor: pointer;
 }
@@ -44,7 +41,7 @@
   background-image: url("https://www.arpatech.com/img/about/ser2.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  transition: all .3s linear;
+  transition: all 0.3s linear;
   color: white;
   cursor: pointer;
 }
@@ -52,7 +49,7 @@
   background-image: url("https://www.arpatech.com/img/about/ser3.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  transition: all .3s linear;
+  transition: all 0.3s linear;
   color: white;
   cursor: pointer;
 }
@@ -60,7 +57,7 @@
   background-image: url("https://www.arpatech.com/img/about/ser4.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  transition: all .3s linear;
+  transition: all 0.3s linear;
   color: white;
   cursor: pointer;
 }
@@ -68,7 +65,7 @@
   background-image: url("https://www.arpatech.com/img/about/ser5.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  transition: all .3s linear;
+  transition: all 0.3s linear;
   color: white;
   cursor: pointer;
 }
@@ -76,7 +73,7 @@
   background-image: url("https://www.arpatech.com/img/about/ser6.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  transition: all .3s linear;
+  transition: all 0.3s linear;
   color: white;
   cursor: pointer;
 }
@@ -84,7 +81,7 @@
   background-image: url("https://www.arpatech.com/img/about/ser7.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  transition: all .3s linear;
+  transition: all 0.3s linear;
   color: white;
   cursor: pointer;
 }
@@ -92,7 +89,7 @@
   background-image: url("https://www.arpatech.com/img/about/ser8.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  transition: all .3s linear;
+  transition: all 0.3s linear;
   color: white;
   cursor: pointer;
 }
@@ -100,7 +97,7 @@
   background-image: url("https://www.arpatech.com/img/about/ser9.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  transition: all .3s linear;
+  transition: all 0.3s linear;
   color: white;
   cursor: pointer;
 }
@@ -108,7 +105,7 @@
   background-image: url("https://www.arpatech.com/img/about/ser10.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  transition: all .3s linear;
+  transition: all 0.3s linear;
   color: white;
   cursor: pointer;
 }
@@ -116,7 +113,7 @@
   background-image: url("https://www.arpatech.com/img/about/ser11.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  transition: all .3s linear;
+  transition: all 0.3s linear;
   color: white;
   cursor: pointer;
 }
@@ -124,19 +121,19 @@
   background-image: url("https://www.arpatech.com/img/about/ser12.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  transition: all .3s linear;
+  transition: all 0.3s linear;
   color: white;
   cursor: pointer;
 }
 
 .awardWinningImages:hover {
-  transition: transform .5s ease;
+  transition: transform 0.5s ease;
   transform: scale(1.05);
   z-index: 1;
   height: 200;
   overflow: hidden;
   width: 150;
-} 
+}
 
 .newsCard:hover {
   background-color: #bdd030;
@@ -144,12 +141,28 @@
 }
 
 .homeBG {
-  background-image: url("../Asset/Images/HomeBG.jpeg");
+  background-image: url("../Asset/Images/Smart\ Soft\ Logo\ JPG-01.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  margin-top: 200;
+  background-position: center;
+  min-height: 1000px;
+  min-width: 1000px;
+  box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.7);
 }
 
 .home {
   padding-top: 400;
+}
+
+.thanks {
+  font-size: 48px;
+  font-weight: 700;
+  color: white;
+  text-transform: uppercase;
+  margin: 0%;
+}
+
+.thanks:hover {
+  letter-spacing: 5px;
+  transition: all 0.3s cubic-bezier(0.215, 0.61, 0.355, 1);
 }

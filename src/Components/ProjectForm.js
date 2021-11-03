@@ -1,7 +1,16 @@
 import React, { useState } from "react";
-import { MenuItem, TextField, FormControl, Paper, Button } from "@mui/material";
+import { useHistory } from "react-router-dom";
+import {
+  MenuItem,
+  TextField,
+  FormControl,
+  Paper,
+  Button,
+  Backdrop,
+} from "@mui/material";
 import { makeStyles } from "@mui/styles";
 import { CountryDropdown } from "react-country-region-selector";
+import "../Pages/Home.css";
 
 const useStyles = makeStyles({
   country: {
@@ -11,18 +20,37 @@ const useStyles = makeStyles({
   },
   btn: {
     borderRadius: 12,
-    marginTop: 20
-  }
+    marginTop: 20,
+  },
+  text: {
+    fontSize: 15,
+    fontWeight: 700,
+    color: "white",
+  },
 });
 
 export default function ProjectForm() {
   const classes = useStyles();
+  const history = useHistory();
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [projectType, setProjectType] = useState("");
   const [country, setCountry] = useState("");
   const [phone, setPhone] = useState("");
   const [message, setMessage] = useState("");
+  const [open, setOpen] = useState(false);
+
+  const handleClickOpen = () => {
+    setOpen(true);
+  };
+
+  const handleClose = () => {
+    setOpen(false);
+  };
+
+  const goToHome = () => {
+    history.push("/");
+  };
 
   const projectTypes = [
     {
@@ -64,7 +92,7 @@ export default function ProjectForm() {
 
   return (
     <>
-      <Paper elevation={3} >
+      <Paper elevation={3}>
         {/* Name */}
         <TextField
           style={{ marginTop: 10 }}
@@ -136,9 +164,45 @@ export default function ProjectForm() {
           onChange={messageChangeHander}
         />
       </Paper>
-      <Button style={{marginTop: 20, borderRadius: 12}} variant="contained">
+      <Button
+        style={{ marginTop: 20, borderRadius: 12 }}
+        variant="contained"
+        onClick={handleClickOpen}
+      >
         Get Started
       </Button>
+      <div>
+        <Backdrop
+          open={open}
+          onClick={handleClose}
+          sx={{
+            display: "block",
+            boxShadow: "inset 0 0 0 1000px rgba(0, 0, 0, 0.7)",
+            zIndex: 10
+          }}
+        >
+          <div style={{ marginTop: 200 }}>
+            <p className="thanks">
+              <center> Thank You </center>
+            </p>
+            <p className={classes.text}>Our team will get in touch with you</p>
+            <Button
+              className="srvsBtn"
+              onClick={goToHome}
+              sx={{
+                bgcolor: "#bdd030",
+                color: "white",
+                borderRadius: 12,
+                minWidth: 200,
+                fontWeight: 700,
+                marginTop: 5,
+              }}
+            >
+              Get Back To Home
+            </Button>
+          </div>
+        </Backdrop>
+      </div>
     </>
   );
 }

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import {
   styled,
   Table,
@@ -9,11 +9,18 @@ import {
   TableRow,
   Paper,
   Button,
+  Dialog,
+  DialogActions,
+  DialogContent,
+  DialogContentText,
+  DialogTitle,
+  Slide,
+  Divider,
 } from "@mui/material";
 
 const StyledTableCell = styled(TableCell)(({ theme }) => ({
   [`&.${tableCellClasses.body}`]: {
-    fontSize: 20
+    fontSize: 20,
   },
 }));
 
@@ -21,11 +28,11 @@ const StyledTableRow = styled(TableRow)(({ theme }) => ({
   "&:nth-of-type(odd)": {
     backgroundColor: theme.palette.action.hover,
   },
-  // hide last border
-//   "&:last-child td, &:last-child th": {
-//     border: 0,
-//   },
 }));
+
+const Transition = React.forwardRef(function Transition(props, ref) {
+  return <Slide direction="down" ref={ref} {...props} />;
+});
 
 const jobs = [
   { title: ".Net Developer" },
@@ -44,10 +51,20 @@ const jobs = [
   { title: "Share Point Developer" },
   { title: "Business Analyst" },
 ];
-export default function titleTable() {
+export default function JobTable() {
+  const [open, setOpen] = useState(false);
+
+  const handleClickOpen = () => {
+    setOpen(true);
+  };
+
+  const handleClose = () => {
+    setOpen(false);
+  };
+
   return (
     <>
-      <TableContainer component={Paper} >
+      <TableContainer component={Paper}>
         <Table sx={{ minWidth: 700 }} aria-label="customized table">
           <TableBody>
             {jobs.map((job) => (
@@ -56,13 +73,57 @@ export default function titleTable() {
                   {job.title}
                 </StyledTableCell>
                 <StyledTableCell align="right">
-                  <Button variant="contained">Apply</Button>
+                  <Button variant="contained" onClick={handleClickOpen}>
+                    Apply
+                  </Button>
                 </StyledTableCell>
               </StyledTableRow>
             ))}
           </TableBody>
         </Table>
       </TableContainer>
+      <Dialog
+        open={open}
+        TransitionComponent={Transition}
+        keepMounted
+        onClose={handleClose}
+        aria-describedby="alert-dialog-slide-description"
+      >
+        <DialogTitle
+          style={{
+            margin: 0,
+            lineHeight: 1,
+            fontWeight: 700,
+            textTransform: "uppercase",
+            fontSize: 18,
+            color: "#333333",
+          }}
+        >
+          {"Apply Now"}
+        </DialogTitle>
+        <Divider />
+        <DialogContent>
+          <DialogContentText
+            id="alert-dialog-slide-description"
+            style={{
+              fontSize: 14,
+              lineHeight: 1.75,
+              margin: "0 0 10px",
+              color: "#333333",
+              fontWeight: 700,
+            }}
+          >
+            Send us an e-mail with the subject of job title at
+            "careers@smartsoft.com"
+          </DialogContentText>
+        </DialogContent>
+        <Divider />
+        <DialogActions>
+          <Button variant="contained" size="small" onClick={handleClose}>
+            Close
+          </Button>
+        </DialogActions>
+      </Dialog>
     </>
   );
 }

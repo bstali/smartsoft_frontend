@@ -58,7 +58,7 @@ export default function Home() {
         <div>
           <Intro />
         </div>
-        <div style={{ marginTop: 80 }}>
+        <div style={{ marginTop: 80, marginBottom: 100 }}>
           <Button
             className="srvsBtn"
             sx={{
@@ -74,7 +74,9 @@ export default function Home() {
           <Button
             className="portfolioBtn"
             sx={{
-              bgcolor: "white",
+              bgcolor: "transparent",
+              border: "1px solid white",
+              color: "white",
               borderRadius: 12,
               minWidth: 200,
               fontWeight: 700,
@@ -92,7 +94,7 @@ export default function Home() {
         alignItems="center"
       >
         <Grid item xs={2}></Grid>
-        <Grid item xs={8}>
+        <Grid id="1" item xs={8}>
           <h2 className={classes.midHeading}>WHAT WE DO</h2>
           <p className={classes.servicesDescription}>
             We have a refined process after we have taken up a project. We offer
@@ -142,11 +144,12 @@ export default function Home() {
         </Grid>
         <Grid item xs={1}></Grid>
       </Grid>
-      <NewsAndBlogs />
-      <AwardWinningProjects />
-      <TechnologyAndBusiness />
-      <AboutCompany />
-      <Contact />
+      <div><NewsAndBlogs /></div>
+      <div><AwardWinningProjects /></div>
+      <div><TechnologyAndBusiness /></div>
+      <div><AboutCompany /></div>
+      <div><Contact /></div>
+      
     </div>
   );
 }
