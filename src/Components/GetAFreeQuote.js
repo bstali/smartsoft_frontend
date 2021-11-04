@@ -1,8 +1,9 @@
 import React, { useState } from "react";
-import { Dialog, Slide } from "@mui/material";
+import { Slide, Backdrop } from "@mui/material";
 import ProjectForm from "./ProjectForm";
 import { makeStyles } from "@mui/styles";
 import CloseIcon from "@mui/icons-material/Close";
+import "../Pages/Home.css";
 
 const useStyles = makeStyles({
   text: {
@@ -24,10 +25,9 @@ const useStyles = makeStyles({
   quote: {
     fontWeight: 400,
     fontFamily: "Montserrat, Helvetica Neue, Helvetica, Arial, sans-serif",
-    float: "right",
     margin: 0,
     cursor: "pointer",
-    color: "black",
+    color: "white",
   },
 });
 
@@ -37,41 +37,53 @@ const Transition = React.forwardRef(function Transition(props, ref) {
 
 export default function GetAFreeQuote() {
   const classes = useStyles();
-  const [open, setOpen] = useState(false);
+  const [openGetQuote, setOpenGetQuote] = useState(false);
+  // const [rotate, setRotate] = useState(false);
 
-  const handleClickOpen = () => {
-    setOpen(true);
+
+  // const rotation = () => {
+  //   if (window.scrollY > 0) {
+  //     setRotate(true);
+  //   } else {
+  //     setRotate(false);
+  //   }
+  // };
+  // window.addEventListener("scroll", rotation);
+
+  const handleClickOpenGetQuote = () => {
+    setOpenGetQuote(true);
   };
 
-  const handleClose = () => {
-    setOpen(false);
+  const handleCloseGetQuote = () => {
+    setOpenGetQuote(false);
   };
+
   return (
     <>
-      <p onClick={handleClickOpen} className={classes.quote}>
+      <p onClick={handleClickOpenGetQuote} className={classes.quote}>
         Get a Free Quote
       </p>
       <div>
-        <Dialog
-          open={open}
-          onClick={handleClose}
+        <Backdrop
+          open={openGetQuote}
+          onClick={handleCloseGetQuote}
           TransitionComponent={Transition}
           sx={{
             backgroundColor: "",
             display: "block",
             boxShadow: "inset 0 0 0 1000px #00aeffc9",
-            zIndex: 2,
+            zIndex: 5,
           }}
         >
           <p className={classes.text}>
             Get In Touch With The Team &nbsp;&nbsp;{" "}
-            <CloseIcon className={classes.closeIcon} onClick={handleClose} />
+            <CloseIcon className={classes.closeIcon} onClick={handleCloseGetQuote} />
           </p>
           <p className={classes.description}>
             Get free quote and consultation for your project
           </p>
           <ProjectForm />
-        </Dialog>
+        </Backdrop>
       </div>
     </>
   );

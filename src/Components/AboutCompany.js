@@ -18,6 +18,7 @@ const useStyles = makeStyles({
 export default function AboutCompany() {
   const classes = useStyles();
   return (
+    <div style={{marginBottom: 100}}>
     <Carousel interval={3000} autoPlay={true} animation="slide" swipe={true} IndicatorIcon={false}>
       <div style={{ paddingTop: 80 }}>
         <p className={classes.headingTop}>Infrastructure</p>
@@ -84,5 +85,6 @@ export default function AboutCompany() {
         />
       </div>
     </Carousel>
+    </div>
   );
 }

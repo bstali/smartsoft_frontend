@@ -5,13 +5,7 @@ import ProjectForm from "../Components/ProjectForm";
 import "./Home.css";
 
 const useStyles = makeStyles({
-  topHeading: {
-    fontSize: "53px",
-    fontFamily: "Montserrat, Helvetica Neue, Helvetica, Arial, sans-serif",
-    textTransform: "uppercase",
-    color: "white",
-    paddingTop: 50
-  },
+  
   officesHeading: {
     color: "#4a4a4a",
     margin: 0,
@@ -24,7 +18,7 @@ const useStyles = makeStyles({
     fontSize: 24,
     margin: 0,
     marginTop: 10,
-    color: "#bdd030",
+    color: "#ef3066",
     fontFamily: "Montserrat, sans-serif",
     textTransform: "uppercase",
     textAlign: "left",
@@ -52,18 +46,10 @@ const useStyles = makeStyles({
 export default function Contact() {
   const classes = useStyles();
   return (
-    <div style={{ backgroundColor: "#F5F5F5" }}>
+    <div style={{ backgroundColor: "#F5F5F5"}}>
       <div className="homeBG">
-        <h2 className={classes.topHeading}>Let's start your project</h2>
-        <Grid container>
-          <Grid item xs={4}></Grid>
-          <Grid item xs={4}>
             <ProjectForm />
-          </Grid>
-          <Grid item xs={4}></Grid>
-        </Grid>
       </div>
-
       <Grid container style={{ marginTop: 100 }}>
         <Grid item xs={4}></Grid>
         <Grid item xs={8}>

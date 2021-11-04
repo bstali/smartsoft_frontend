@@ -7,12 +7,21 @@ import {
   Paper,
   Button,
   Backdrop,
+  Grid,
+  Slide,
 } from "@mui/material";
 import { makeStyles } from "@mui/styles";
 import { CountryDropdown } from "react-country-region-selector";
 import "../Pages/Home.css";
 
 const useStyles = makeStyles({
+  topHeading: {
+    fontSize: 32,
+    fontFamily: "Montserrat, Helvetica Neue, Helvetica, Arial, sans-serif",
+    textTransform: "uppercase",
+    color: "white",
+    paddingTop: 50,
+  },
   country: {
     minHeight: 60,
     fontFamily: "Montserrat, sans-serif",
@@ -27,6 +36,10 @@ const useStyles = makeStyles({
     fontWeight: 700,
     color: "white",
   },
+});
+
+const Transition = React.forwardRef(function Transition(props, ref) {
+  return <Slide direction="up" ref={ref} {...props} />;
 });
 
 export default function ProjectForm() {
@@ -92,93 +105,109 @@ export default function ProjectForm() {
 
   return (
     <>
-      <Paper elevation={3}>
-        {/* Name */}
-        <TextField
-          style={{ marginTop: 10 }}
-          required
-          id="outlined-required"
-          variant="outlined"
-          fullWidth
-          label="YOUR NAME"
-          value={name}
-          onChange={nameChangeHander}
-        />
-        {/* Email */}
-        <TextField
-          style={{ marginTop: 10 }}
-          required
-          id="outlined-required"
-          variant="outlined"
-          fullWidth
-          label="YOUR EMAIL"
-          value={email}
-          onChange={emailChangeHander}
-        />
-        {/* Project Type*/}
-        <TextField
-          style={{ marginTop: 10 }}
-          id="outlined-select-currency"
-          select
-          label="SELECT PROJECT"
-          fullWidth
-          value={projectType}
-          onChange={projectTypeChangeHander}
-        >
-          {projectTypes.map((option) => (
-            <MenuItem key={option.value} value={option.value}>
-              {option.label}
-            </MenuItem>
-          ))}
-        </TextField>
-        {/* Select Country */}
-        <FormControl style={{ marginTop: 10 }} variant="outlined" fullWidth>
-          <CountryDropdown
-            classes={classes.country}
-            value={country}
-            onChange={selectCountry}
-          />
-        </FormControl>
-        {/* Phone */}
-        <TextField
-          style={{ marginTop: 10 }}
-          required
-          id="outlined-required"
-          variant="outlined"
-          fullWidth
-          label="YOUR PHONE"
-          value={phone}
-          onChange={phoneChangeHander}
-        />
-        {/* Message */}
-        <TextField
-          style={{ marginTop: 10, marginBottom: 10 }}
-          required
-          id="outlined-required"
-          variant="outlined"
-          fullWidth
-          multiline
-          rows={4}
-          label="YOUR MESSAGE"
-          value={message}
-          onChange={messageChangeHander}
-        />
-      </Paper>
-      <Button
-        style={{ marginTop: 20, borderRadius: 12 }}
-        variant="contained"
-        onClick={handleClickOpen}
-      >
-        Get Started
-      </Button>
+      <Grid container>
+        <Grid item xs={4}></Grid>
+        <Grid item xs={4}>
+        <h2 className={classes.topHeading}>Let's start your project</h2>
+          <Paper elevation={3}>
+            {/* Name */}
+            <TextField
+              style={{ marginTop: 10,  maxWidth: 600 }}
+              required
+              id="outlined-required"
+              variant="outlined"
+              fullWidth
+              label="YOUR NAME"
+              value={name}
+              onChange={nameChangeHander}
+            />
+            {/* Email */}
+            <TextField
+              style={{ marginTop: 10,  maxWidth: 600 }}
+              required
+              id="outlined-required"
+              variant="outlined"
+              fullWidth
+              label="YOUR EMAIL"
+              value={email}
+              onChange={emailChangeHander}
+            />
+            {/* Project Type*/}
+            <TextField
+              style={{ marginTop: 10,  maxWidth: 600 }}
+              id="outlined-select-currency"
+              select
+              label="SELECT PROJECT"
+              fullWidth
+              value={projectType}
+              onChange={projectTypeChangeHander}
+            >
+              {projectTypes.map((option) => (
+                <MenuItem key={option.value} value={option.value}>
+                  {option.label}
+                </MenuItem>
+              ))}
+            </TextField>
+            {/* Select Country */}
+            <FormControl style={{ marginTop: 10,  maxWidth: 600 }} variant="outlined" fullWidth>
+              <CountryDropdown
+                classes={classes.country}
+                value={country}
+                onChange={selectCountry}
+              />
+            </FormControl>
+            {/* Phone */}
+            <TextField
+              style={{ marginTop: 10,  maxWidth: 600 }}
+              required
+              id="outlined-required"
+              variant="outlined"
+              fullWidth
+              label="YOUR PHONE"
+              value={phone}
+              onChange={phoneChangeHander}
+            />
+            {/* Message */}
+            <TextField
+              style={{ marginTop: 10, marginBottom: 10,  maxWidth: 600,}}
+              required
+              id="outlined-required"
+              variant="outlined"
+              fullWidth
+              multiline
+              rows={4}
+              label="YOUR MESSAGE"
+              value={message}
+              onChange={messageChangeHander}
+            />
+          </Paper>
+          <Button
+            className="srvsBtn"
+            sx={{
+              bgcolor: "#EF3066",
+              color: "white",
+              borderRadius: 12,
+              minWidth: 200,
+              fontWeight: 700,
+              marginTop: 2,
+            }}
+            onClick={handleClickOpen}
+          >
+            Get Started
+          </Button>
+        </Grid>
+        <Grid item xs={3}></Grid>
+      </Grid>
+
       <div>
         <Backdrop
           open={open}
           onClick={handleClose}
+          TransitionComponent={Transition}
           sx={{
             display: "block",
             boxShadow: "inset 0 0 0 1000px rgba(0, 0, 0, 0.7)",
-            zIndex: 10
+            zIndex: 100,
           }}
         >
           <div style={{ marginTop: 200 }}>
@@ -190,7 +219,7 @@ export default function ProjectForm() {
               className="srvsBtn"
               onClick={goToHome}
               sx={{
-                bgcolor: "#bdd030",
+                bgcolor: "#ef3066",
                 color: "white",
                 borderRadius: 12,
                 minWidth: 200,

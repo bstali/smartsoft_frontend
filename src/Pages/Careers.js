@@ -50,7 +50,7 @@ export default function Career() {
           <Button
             className="srvsBtn"
             sx={{
-              bgcolor: "#bdd030",
+              bgcolor: "#ef3066",
               color: "white",
               borderRadius: 12,
               minWidth: 200,

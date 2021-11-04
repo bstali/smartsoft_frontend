@@ -27,12 +27,12 @@ export default function Services() {
                   width: 300,
                   height: 300,
                   border: "1px solid",
-                  borderColor: "#bdd030",
+                  borderColor: "#EF3066",
                 }}
               >
                 <LaptopIcon
                   className="icon1"
-                  style={{ fontSize: 50, marginTop: 50, color: "#bdd030" }}
+                  style={{ fontSize: 50, marginTop: 50, color: "#EF3066" }}
                 />
                 <h3>Web design & development</h3>
                 <p >
@@ -49,11 +49,11 @@ export default function Services() {
                   height: 300,
                   backgroundColor: "white",
                   border: "1px solid",
-                  borderColor: "#bdd030",
+                  borderColor: "#EF3066",
                 }}
               >
                 <PhoneAndroidIcon
-                  style={{ fontSize: 50, marginTop: 50, color: "#bdd030" }}
+                  style={{ fontSize: 50, marginTop: 50, color: "#EF3066" }}
                 />
                 <h3>Mobile App Development</h3>
                 <p >
@@ -70,11 +70,11 @@ export default function Services() {
                   height: 300,
                   backgroundColor: "white",
                   border: "1px solid",
-                  borderColor: "#bdd030",
+                  borderColor: "#EF3066",
                 }}
               >
                 <SettingsSuggestIcon
-                  style={{ fontSize: 50, marginTop: 50, color: "#bdd030" }}
+                  style={{ fontSize: 50, marginTop: 50, color: "#EF3066" }}
                 />
                 <h3>Software Development</h3>
                 <p >
@@ -91,11 +91,11 @@ export default function Services() {
                   height: 300,
                   backgroundColor: "white",
                   border: "1px solid",
-                  borderColor: "#bdd030",
+                  borderColor: "#EF3066",
                 }}
               >
                 <FilterDramaIcon
-                  style={{ fontSize: 50, marginTop: 50, color: "#bdd030" }}
+                  style={{ fontSize: 50, marginTop: 50, color: "#EF3066" }}
                 />
                 <h3>Startup Solution</h3>
                 <p >
@@ -112,11 +112,11 @@ export default function Services() {
                   height: 300,
                   backgroundColor: "white",
                   border: "1px solid",
-                  borderColor: "#bdd030",
+                  borderColor: "#EF3066",
                 }}
               >
                 <FilterDramaIcon
-                  style={{ fontSize: 50, marginTop: 50, color: "#bdd030" }}
+                  style={{ fontSize: 50, marginTop: 50, color: "#EF3066" }}
                 />
                 <h3>DevOps</h3>
                 <p >
@@ -134,11 +134,11 @@ export default function Services() {
                   height: 300,
                   backgroundColor: "white",
                   border: "1px solid",
-                  borderColor: "#bdd030",
+                  borderColor: "#EF3066",
                 }}
               >
                 <PersonIcon
-                  style={{ fontSize: 50, marginTop: 50, color: "#bdd030" }}
+                  style={{ fontSize: 50, marginTop: 50, color: "#EF3066" }}
                 />
                 <h3>Resource Augmentation</h3>
                 <p >
@@ -156,11 +156,11 @@ export default function Services() {
                   height: 300,
                   backgroundColor: "white",
                   border: "1px solid",
-                  borderColor: "#bdd030",
+                  borderColor: "#EF3066",
                 }}
               >
                 <ShoppingCartIcon
-                  style={{ fontSize: 50, marginTop: 50, color: "#bdd030" }}
+                  style={{ fontSize: 50, marginTop: 50, color: "#EF3066" }}
                 />
                 <h3>Ecommerce Solution</h3>
                 <p >
@@ -178,11 +178,11 @@ export default function Services() {
                   height: 300,
                   backgroundColor: "white",
                   border: "1px solid",
-                  borderColor: "#bdd030",
+                  borderColor: "#EF3066",
                 }}
               >
                 <CloudIcon
-                  style={{ fontSize: 50, marginTop: 50, color: "#bdd030" }}
+                  style={{ fontSize: 50, marginTop: 50, color: "#EF3066" }}
                 />
                 <h3>Managed Cloud Hosting</h3>
                 <p >
@@ -200,11 +200,11 @@ export default function Services() {
                   height: 300,
                   backgroundColor: "white",
                   border: "1px solid",
-                  borderColor: "#bdd030",
+                  borderColor: "#EF3066",
                 }}
               >
                 <GroupIcon
-                  style={{ fontSize: 50, marginTop: 50, color: "#bdd030" }}
+                  style={{ fontSize: 50, marginTop: 50, color: "#EF3066" }}
                 />
                 <h3>IT Resource Allocation</h3>
                 <p >
@@ -222,11 +222,11 @@ export default function Services() {
                   height: 300,
                   backgroundColor: "white",
                   border: "1px solid",
-                  borderColor: "#bdd030",
+                  borderColor: "#EF3066",
                 }}
               >
                 <BusinessCenterIcon
-                  style={{ fontSize: 50, marginTop: 50, color: "#bdd030" }}
+                  style={{ fontSize: 50, marginTop: 50, color: "#EF3066" }}
                 />
                 <h3>Business Intelligence</h3>
                 <p >
@@ -243,11 +243,11 @@ export default function Services() {
                   height: 300,
                   backgroundColor: "white",
                   border: "1px solid",
-                  borderColor: "#bdd030",
+                  borderColor: "#EF3066",
                 }}
               >
                 <AccessibilityNewIcon
-                  style={{ fontSize: 50, marginTop: 50, color: "#bdd030" }}
+                  style={{ fontSize: 50, marginTop: 50, color: "#EF3066" }}
                 />
                 <h3>Business Process Outsourcing</h3>
                 <p >
@@ -265,11 +265,11 @@ export default function Services() {
                   height: 300,
                   backgroundColor: "white",
                   border: "1px solid",
-                  borderColor: "#bdd030",
+                  borderColor: "#EF3066",
                 }}
               >
                 <AddBusinessIcon
-                  style={{ fontSize: 50, marginTop: 50, color: "#bdd030" }}
+                  style={{ fontSize: 50, marginTop: 50, color: "#EF3066" }}
                 />
                 <h3>Digital Marketing</h3>
                 <p >

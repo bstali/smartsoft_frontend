@@ -1,6 +1,7 @@
 import React from "react";
 import { makeStyles } from "@mui/styles";
 import Carousel from "react-material-ui-carousel";
+import Logo from "../Asset/Images/SmartSoftLogov44-02-2.png"
 
 const useStyles = makeStyles({
   topHeading: {
@@ -10,7 +11,7 @@ const useStyles = makeStyles({
     color: "white"
   },
   descriptionHeading: {
-    color: "#bdd030",
+    color: "#EF3066",
     fontSize: 20,
     fontWeight: 700,
     fontFamily: "Montserrat",
@@ -59,7 +60,8 @@ export default function Intro() {
   ];
 
   return (
-    <div style={{paddingTop: 300}}>
+    <div style={{paddingTop: 150}}>
+      <img src={Logo} alt="logo" style={{width: "60%"}}/>
       <p className={classes.topHeading}>
         WORLD'S FINEST <br />
         TECHNOLOGY HUB

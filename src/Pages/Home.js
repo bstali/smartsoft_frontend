@@ -27,14 +27,14 @@ const useStyles = makeStyles({
     fontWeight: 500,
   },
   grnFirstHeading: {
-    color: "#333",
+    color: "white",
     fontFamily: "Montserrat",
     fontWeight: 700,
     fontSize: 17,
     lineHeight: 0.25,
   },
   grnSecondHeading: {
-    color: "#333",
+    color: "white",
     fontFamily: "Montserrat",
     fontWeight: 700,
     fontSize: 17,
@@ -45,7 +45,7 @@ const useStyles = makeStyles({
     marginLeft: 10,
     fontFamily: "Montserrat",
     fontWeight: 700,
-    color: "#4A4A4A",
+    color: "white",
     fontSize: 20,
   },
 });
@@ -62,7 +62,7 @@ export default function Home() {
           <Button
             className="srvsBtn"
             sx={{
-              bgcolor: "#bdd030",
+              bgcolor: "#EF3066",
               color: "white",
               borderRadius: 12,
               minWidth: 200,
@@ -110,7 +110,7 @@ export default function Home() {
       <MicroSoftServices />
       <Grid
         container
-        style={{ backgroundColor: "#BDD030", marginTop: 150, padding: 40 }}
+        style={{ backgroundColor: "#EF3066", marginTop: 150, padding: 40 }}
       >
         <Grid item xs={1}></Grid>
         <Grid item xs={10}>

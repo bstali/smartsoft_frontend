@@ -20,13 +20,13 @@
   border: 1px solid white;
   transition: background 0.5s;
   background-color: white;
-  color: #bdd030;
+  color: #ef3066;
 }
 
 .portfolioBtn:hover {
   background: rgb(255, 255, 255);
   transition: background 0.5s;
-  color: #bdd030;
+  color: #ef3066;
 }
 
 .service1:hover {
@@ -136,7 +136,7 @@
 }
 
 .newsCard:hover {
-  background-color: #bdd030;
+  background-color: #ef3066;
   color: white;
 }
 
@@ -144,9 +144,7 @@
   background-image: url("../Asset/Images/Smart\ Soft\ Logo\ JPG-01.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
   min-height: 1000px;
-  min-width: 1000px;
   box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.7);
 }
 
@@ -165,4 +163,18 @@
 .thanks:hover {
   letter-spacing: 5px;
   transition: all 0.3s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+.navbar {
+  background-color: transparent;
+  align-items: "center";
+  box-shadow: "none";
+}
+
+.navbar.colorChange {
+  background-color: #ef3066;
+  color: white;
+  min-height: 50px;
+  padding-top: 10px;
+  transition: 0.9s linear;
+
 }

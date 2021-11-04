@@ -38,7 +38,7 @@ export default function NewsAndBlogs() {
                 sx={{
                   maxWidth: 345,
                   border: "2px solid",
-                  borderColor: "#bdd030",
+                  borderColor: "#EF3066",
                 }}
               >
                 <CardMedia
@@ -61,7 +61,7 @@ export default function NewsAndBlogs() {
                 sx={{
                   maxWidth: 345,
                   border: "2px solid",
-                  borderColor: "#bdd030",
+                  borderColor: "#EF3066",
                 }}
               >
                 <CardMedia
@@ -84,7 +84,7 @@ export default function NewsAndBlogs() {
                 sx={{
                   maxWidth: 345,
                   border: "2px solid",
-                  borderColor: "#bdd030",
+                  borderColor: "#EF3066",
                 }}
               >
                 <CardMedia
