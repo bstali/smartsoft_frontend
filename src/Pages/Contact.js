@@ -5,7 +5,6 @@ import ProjectForm from "../Components/ProjectForm";
 import "./Home.css";
 
 const useStyles = makeStyles({
-  
   officesHeading: {
     color: "#4a4a4a",
     margin: 0,
@@ -45,10 +44,14 @@ const useStyles = makeStyles({
 
 export default function Contact() {
   const classes = useStyles();
+  React.useEffect(() => {
+    // alert("i am contact")
+    window.scrollTo({ top: 80});
+  }, []);
   return (
-    <div style={{ backgroundColor: "#F5F5F5"}}>
+    <div style={{ backgroundColor: "#F5F5F5" }}>
       <div className="homeBG">
-            <ProjectForm />
+        <ProjectForm />
       </div>
       <Grid container style={{ marginTop: 100 }}>
         <Grid item xs={4}></Grid>

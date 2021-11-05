@@ -66,12 +66,12 @@ export default function GetAFreeQuote() {
       <div>
         <Backdrop
           open={openGetQuote}
-          onClick={handleCloseGetQuote}
+          // onClick={handleCloseGetQuote}
           TransitionComponent={Transition}
           sx={{
             backgroundColor: "",
             display: "block",
-            boxShadow: "inset 0 0 0 1000px #00aeffc9",
+            boxShadow: "inset 0 0 0 1000px rgba(0, 0, 0, 0.7)",
             zIndex: 5,
           }}
         >

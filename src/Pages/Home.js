@@ -12,20 +12,7 @@ import "./Home.css";
 import Intro from "../Components/Intro";
 
 const useStyles = makeStyles({
-  midHeading: {
-    fontSize: 45,
-    color: "#333",
-    fontFamily: "Montserrat",
-    fontWeight: 400,
-    marginTop: 150,
-  },
-  servicesDescription: {
-    color: "#333",
-    fontSize: 16,
-    fontFamily: "arial",
-    lineHeight: 1.75,
-    fontWeight: 500,
-  },
+  
   grnFirstHeading: {
     color: "white",
     fontFamily: "Montserrat",
@@ -52,6 +39,15 @@ const useStyles = makeStyles({
 
 export default function Home() {
   const classes = useStyles();
+
+  const viewServices = () => {
+    document.getElementById("services").scrollIntoView({behavior: "smooth"})
+  }
+
+  const viewPortfolio = () => {
+    document.getElementById("awardwinprojects").scrollIntoView({behavior: "smooth"})
+  }
+  
   return (
     <div style={{ backgroundColor: "#F5F5F5"}}>
       <div className="homeBG" >
@@ -61,6 +57,7 @@ export default function Home() {
         <div style={{ marginTop: 80, marginBottom: 100 }}>
           <Button
             className="srvsBtn"
+            onClick={viewServices}
             sx={{
               bgcolor: "#EF3066",
               color: "white",
@@ -73,6 +70,7 @@ export default function Home() {
           </Button>
           <Button
             className="portfolioBtn"
+            onClick={viewPortfolio}
             sx={{
               bgcolor: "transparent",
               border: "1px solid white",
@@ -95,18 +93,13 @@ export default function Home() {
       >
         <Grid item xs={2}></Grid>
         <Grid id="1" item xs={8}>
-          <h2 className={classes.midHeading}>WHAT WE DO</h2>
-          <p className={classes.servicesDescription}>
-            We have a refined process after we have taken up a project. We offer
-            the platform from where the projects take shape through stages of
-            planning, testing and execution. In this aspect we follow an agile
-            methodology and run the project through a loop of feedback and
-            constant improvement. Our specialized services also have:
-          </p>
+          
         </Grid>
         <Grid item xs={2}></Grid>
       </Grid>
+      <div id="services">
       <Services />
+      </div>
       <MicroSoftServices />
       <Grid
         container
@@ -145,7 +138,7 @@ export default function Home() {
         <Grid item xs={1}></Grid>
       </Grid>
       <div><NewsAndBlogs /></div>
-      <div><AwardWinningProjects /></div>
+      <div id="awardwinprojects"><AwardWinningProjects /></div>
       <div><TechnologyAndBusiness /></div>
       <div><AboutCompany /></div>
       <div><Contact /></div>

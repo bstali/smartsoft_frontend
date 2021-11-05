@@ -57,6 +57,9 @@ export default function NavBar() {
           <NavLink exact to="/Careers" className={classes.navItems}>
             Careers
           </NavLink>
+          <NavLink exact to="/Slider" className={classes.navItems}>
+            Slider
+          </NavLink>
           <div style={{ float: "right" }}>
             <GetAFreeQuote />
           </div>

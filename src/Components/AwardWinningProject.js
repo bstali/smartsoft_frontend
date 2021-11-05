@@ -90,13 +90,13 @@ export default function AwardWinningProjects() {
       <p className={classes.headingTop}>AWARD WINNING PROJECTS</p>
       <Grid
         container
-        direction="row"
-        justifyContent="center"
+        direction="column"
+        justifyContent="flex-start"
         alignItems="center"
       >
         <Grid item xs={2}></Grid>
         <Grid item xs={8}>
-          <ImageList sx={{ width: 1000, height: 950, overflow: "hidden", position:"relative" }} cols={4}>
+          <ImageList sx={{ width: 1000, height: 950, overflow: "hidden"}} cols={4}>
             {itemData.map((item) => (
               <ImageListItem key={item.img}>
                 <img

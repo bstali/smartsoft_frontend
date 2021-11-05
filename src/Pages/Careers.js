@@ -28,15 +28,15 @@ const useStyles = makeStyles({
     borderRadius: 12,
     textTransform: "uppercase",
   },
-  tableHeader: {
-    fontFamily: "Montserrat, Helvetica Neue, Helvetica, Arial, sans-serif",
-    textTransform: "uppercase",
-    marginBottom: 30,
-    fontSize: 30,
-  },
+  
 });
 export default function Career() {
   const classes = useStyles();
+
+  const seeVacancies = () => {
+    document.getElementById("vacancies").scrollIntoView({behavior: "smooth"})
+  }
+
   return (
     <>
       <div className="homeBG">
@@ -49,6 +49,7 @@ export default function Career() {
           </p>
           <Button
             className="srvsBtn"
+            onClick={seeVacancies}
             sx={{
               bgcolor: "#ef3066",
               color: "white",
@@ -64,8 +65,7 @@ export default function Career() {
       </div>
       <Grid container>
         <Grid Item xs={1}></Grid>
-        <Grid Item xs={10} style={{ marginBottom: 30 }}>
-          <p className={classes.tableHeader}>Job openings</p>
+        <Grid id="vacancies" Item xs={10} style={{ marginBottom: 30 }}>
           <JobTable />
         </Grid>
         <Grid Item xs={1}></Grid>

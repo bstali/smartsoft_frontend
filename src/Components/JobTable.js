@@ -17,6 +17,17 @@ import {
   Slide,
   Divider,
 } from "@mui/material";
+import { makeStyles } from "@mui/styles";
+
+const useStyles = makeStyles({
+  tableHeader: {
+    fontFamily: "Montserrat, Helvetica Neue, Helvetica, Arial, sans-serif",
+    textTransform: "uppercase",
+    marginBottom: 30,
+    fontSize: 30,
+    marginTop: 100
+  },
+});
 
 const StyledTableCell = styled(TableCell)(({ theme }) => ({
   [`&.${tableCellClasses.body}`]: {
@@ -52,6 +63,7 @@ const jobs = [
   { title: "Business Analyst" },
 ];
 export default function JobTable() {
+  const classes = useStyles();
   const [open, setOpen] = useState(false);
 
   const handleClickOpen = () => {
@@ -64,6 +76,7 @@ export default function JobTable() {
 
   return (
     <>
+      <p className={classes.tableHeader}>Job openings</p>
       <TableContainer component={Paper}>
         <Table sx={{ minWidth: 700 }} aria-label="customized table">
           <TableBody>

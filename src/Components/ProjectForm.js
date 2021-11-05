@@ -108,11 +108,11 @@ export default function ProjectForm() {
       <Grid container>
         <Grid item xs={4}></Grid>
         <Grid item xs={4}>
-        <h2 className={classes.topHeading}>Let's start your project</h2>
+          <h2 className={classes.topHeading}>Let's start your project</h2>
           <Paper elevation={3}>
             {/* Name */}
             <TextField
-              style={{ marginTop: 10,  maxWidth: 600 }}
+              style={{ marginTop: 10, maxWidth: 600 }}
               required
               id="outlined-required"
               variant="outlined"
@@ -123,7 +123,7 @@ export default function ProjectForm() {
             />
             {/* Email */}
             <TextField
-              style={{ marginTop: 10,  maxWidth: 600 }}
+              style={{ marginTop: 10, maxWidth: 600 }}
               required
               id="outlined-required"
               variant="outlined"
@@ -134,7 +134,7 @@ export default function ProjectForm() {
             />
             {/* Project Type*/}
             <TextField
-              style={{ marginTop: 10,  maxWidth: 600 }}
+              style={{ marginTop: 10, maxWidth: 600 }}
               id="outlined-select-currency"
               select
               label="SELECT PROJECT"
@@ -149,7 +149,11 @@ export default function ProjectForm() {
               ))}
             </TextField>
             {/* Select Country */}
-            <FormControl style={{ marginTop: 10,  maxWidth: 600 }} variant="outlined" fullWidth>
+            <FormControl
+              style={{ marginTop: 10, maxWidth: 600 }}
+              variant="outlined"
+              fullWidth
+            >
               <CountryDropdown
                 classes={classes.country}
                 value={country}
@@ -158,7 +162,7 @@ export default function ProjectForm() {
             </FormControl>
             {/* Phone */}
             <TextField
-              style={{ marginTop: 10,  maxWidth: 600 }}
+              style={{ marginTop: 10, maxWidth: 600 }}
               required
               id="outlined-required"
               variant="outlined"
@@ -169,7 +173,7 @@ export default function ProjectForm() {
             />
             {/* Message */}
             <TextField
-              style={{ marginTop: 10, marginBottom: 10,  maxWidth: 600,}}
+              style={{ marginTop: 10, marginBottom: 10, maxWidth: 600 }}
               required
               id="outlined-required"
               variant="outlined"

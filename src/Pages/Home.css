@@ -144,6 +144,7 @@
   background-image: url("../Asset/Images/Smart\ Soft\ Logo\ JPG-01.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: top;
   min-height: 1000px;
   box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.7);
 }
