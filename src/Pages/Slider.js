@@ -49,19 +49,19 @@ export default function Slider(props) {
         itemClass="carousel-item-padding-10-px"
       >
         <div>
-          <img src={Image1} alt="img" style={{maxHeight: 400, maxWidth: 400}}/>
+          <img src={Image1} alt="img" style={{minHeight: 100, maxWidth: 1100}}/>
         </div>
         <div>
-          <img src={Image2} alt="img" style={{maxHeight: 400, maxWidth: 400}}/>
+          <img src={Image2} alt="img" style={{minHeight: 400, maxWidth: 600}}/>
         </div>
         <div>
-          <img src={Image3} alt="img" style={{maxHeight: 400, maxWidth: 400}}/>
+          <img src={Image3} alt="img" style={{minHeight: 400, maxWidth: 600}}/>
         </div>
         <div>
-          <img src={Image4} alt="img" style={{maxHeight: 400, maxWidth: 400}}/>
+          <img src={Image4} alt="img" style={{minHeight: 400, maxWidth: 600}}/>
         </div>
         <div>
-          <img src={Image5} alt="img" style={{maxHeight: 400, maxWidth: 400}}/>
+          <img src={Image5} alt="img" style={{minHeight: 100, maxWidth: 600}}/>
         </div>
       </Carousel>
     </div>

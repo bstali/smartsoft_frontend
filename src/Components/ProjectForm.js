@@ -20,7 +20,7 @@ const useStyles = makeStyles({
     fontFamily: "Montserrat, Helvetica Neue, Helvetica, Arial, sans-serif",
     textTransform: "uppercase",
     color: "white",
-    paddingTop: 50,
+    paddingTop: 40,
   },
   country: {
     minHeight: 60,

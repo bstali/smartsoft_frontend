@@ -7,17 +7,14 @@ import "../Pages/Home.css";
 
 const useStyles = makeStyles({
   text: {
-    fontFamily: "Montserrat, Helvetica Neue, Helvetica, Arial, sans-serif",
     fontWeight: 700,
     fontSize: 30,
     margin: 0,
   },
   description: {
-    fontFamily: "Montserrat, Helvetica Neue, Helvetica, Arial, sans-serif",
-    fontWeight: 400,
+    fontWeight: 700,
     fontSize: 18,
     margin: 0,
-    marginBottom: 20,
   },
   closeIcon: {
     cursor: "pointer",
@@ -39,7 +36,6 @@ export default function GetAFreeQuote() {
   const classes = useStyles();
   const [openGetQuote, setOpenGetQuote] = useState(false);
   // const [rotate, setRotate] = useState(false);
-
 
   // const rotation = () => {
   //   if (window.scrollY > 0) {
@@ -63,28 +59,30 @@ export default function GetAFreeQuote() {
       <p onClick={handleClickOpenGetQuote} className={classes.quote}>
         Get a Free Quote
       </p>
-      <div>
-        <Backdrop
-          open={openGetQuote}
-          // onClick={handleCloseGetQuote}
-          TransitionComponent={Transition}
-          sx={{
-            backgroundColor: "",
-            display: "block",
-            boxShadow: "inset 0 0 0 1000px rgba(0, 0, 0, 0.7)",
-            zIndex: 5,
-          }}
-        >
-          <p className={classes.text}>
-            Get In Touch With The Team &nbsp;&nbsp;{" "}
-            <CloseIcon className={classes.closeIcon} onClick={handleCloseGetQuote} />
-          </p>
-          <p className={classes.description}>
-            Get free quote and consultation for your project
-          </p>
-          <ProjectForm />
-        </Backdrop>
-      </div>
+      <Backdrop
+        open={openGetQuote}
+        // onClick={handleCloseGetQuote}
+        TransitionComponent={Transition}
+        sx={{
+          display: "block",
+          boxShadow: "inset 0 0 0 1000px rgba(0, 0, 0, 1)",
+        }}
+      >
+        <p className={classes.text}>
+          Get In Touch With The Team 
+          <span>
+            <CloseIcon
+              className={classes.closeIcon}
+              onClick={handleCloseGetQuote}
+            />
+          </span>
+        </p>
+        <p className={classes.description}>
+          Get free quote and consultation for your project
+        </p>
+
+        <ProjectForm />
+      </Backdrop>
     </>
   );
 }
