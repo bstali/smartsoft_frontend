@@ -9,7 +9,7 @@ const useStyles = makeStyles({
   officesHeading: {
     color: "#4a4a4a",
     margin: 0,
-    fontSize: "53px",
+    fontSize: 45,
     fontFamily: "Montserrat, sans-serif",
     textTransform: "uppercase",
     textAlign: "left",
@@ -45,19 +45,15 @@ const useStyles = makeStyles({
 
 export default function Contact() {
   const classes = useStyles();
-  // React.useEffect(() => {
-  //   // alert("i am contact")
-  //   window.scrollTo({ top: 80});
-  // }, []);
+  React.useEffect(() => {
+    window.scrollTo({ top: 0 });
+  }, []);
   return (
     <div style={{ backgroundColor: "#F5F5F5" }}>
       <div className="homeBG">
         <ProjectForm />
       </div>
-      <Grid
-        container
-        style={{ paddingTop: 50, paddingBottom: 50 }}
-      >
+      <Grid container style={{ paddingTop: 50, paddingBottom: 50 }}>
         <Grid item xs={1}></Grid>
         <Grid item xs={10}>
           <Grid
@@ -67,10 +63,10 @@ export default function Contact() {
             alignItems="center"
             spacing={5}
           >
-            <Grid item xs={5}>
+            <Grid item xs={12} sm={5}>
               <MapChart />
             </Grid>
-            <Grid item xs={7}>
+            <Grid item xs={12} sm={5}>
               <div>
                 <p className={classes.officesHeading}>Our Global Offices</p>
               </div>
@@ -80,7 +76,7 @@ export default function Contact() {
                 justifyContent="flex-start"
                 alignItems="center"
               >
-                <Grid item xs={6}>
+                <Grid item xs={12} sm={6}>
                   <p className={classes.continentsName}>Asia</p>
                   <p className={classes.country}>Pakistan</p>
                   <p className={classes.city}>Lahore</p>
@@ -90,8 +86,7 @@ export default function Contact() {
                   </p>
                 </Grid>
 
-                <Grid item xs={6}>
-                  <Grid item xs={6}>
+                  <Grid item xs={12} sm={6}>
                     <p className={classes.continentsName}>Europe</p>
                     <p className={classes.country}>UK</p>
                     <p className={classes.address}>
@@ -99,7 +94,6 @@ export default function Contact() {
                       2LF.
                     </p>
                   </Grid>
-                </Grid>
               </Grid>
             </Grid>
           </Grid>

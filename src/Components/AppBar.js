@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 import { makeStyles } from "@mui/styles";
 import GetAFreeQuote from "./GetAFreeQuote";
-import { AppBar } from "@mui/material";
+import { AppBar, Grid } from "@mui/material";
 
 const useStyles = makeStyles({
   navItems: {
@@ -16,8 +16,6 @@ const useStyles = makeStyles({
   },
   appBar: {
     padding: 30,
-    backgroundColor: "rgba(255, 255, 255, 0)",
-    // opacity: 1
   },
   quoteBtn: {
     float: "inherit",
@@ -43,28 +41,32 @@ export default function NavBar() {
           backgroundColor: "transparent",
           boxShadow: "none",
           paddingTop: 2,
-          transition: "all 0.9s linear",
+          transition: "all 0.5s linear",
         }}
         className={colorChange ? "navbar colorChange" : "navbar"}
       >
-        <div>
-          <NavLink exact to="/" className={classes.navItems}>
-            Home
-          </NavLink>
-          <NavLink exact to="/Contact-Us" className={classes.navItems}>
-            Contact
-          </NavLink>
-          <NavLink exact to="/Careers" className={classes.navItems}>
-            Careers
-          </NavLink>
-          <NavLink exact to="/Slider" className={classes.navItems}>
-            Slider
-          </NavLink>
-          <div style={{ float: "right" }}>
+        <Grid
+          container
+          direction="row"
+          justifyContent="center"
+          alignItems="center"
+        >
+          <Grid item xs={2}></Grid>
+          <Grid item xs={8}>
+            <NavLink exact to="/" className={classes.navItems}>
+              Home
+            </NavLink>
+            <NavLink exact to="/Contact-Us" className={classes.navItems}>
+              Contact
+            </NavLink>
+            <NavLink exact to="/Careers" className={classes.navItems}>
+              Careers
+            </NavLink>
+          </Grid>
+          <Grid item xs={2}>
             <GetAFreeQuote />
-          </div>
-        </div>
-        
+          </Grid>
+        </Grid>
       </AppBar>
     </>
   );

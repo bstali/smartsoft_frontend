@@ -25,6 +25,7 @@ const useStyles = makeStyles({
     margin: 0,
     cursor: "pointer",
     color: "white",
+    float: "right"
   },
 });
 

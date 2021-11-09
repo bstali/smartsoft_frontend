@@ -45,14 +45,14 @@ export default function Footer() {
             justifyContent="flex-start"
             alignItems="flex-start"
           >
-            <Grid item xs={4} alignItems="center">
+            <Grid item xs={12} sm={4} alignItems="center">
               <h2>SmartSoft</h2>
               <p>
                 We empower your Business through our ingenious technological
                 solutions, and support from our remarkable teams.
               </p>
             </Grid>
-            <Grid item xs={3}>
+            <Grid item xs={4} sm={3}>
               <p className={classes.serviceHeading}>Services</p>
               <div className={classes.services}>
                 <p>Web Development</p>
@@ -66,7 +66,7 @@ export default function Footer() {
                 <p>IT Management Services</p>
               </div>
             </Grid>
-            <Grid item xs={3}>
+            <Grid item xs={4} sm={3}>
               <p className={classes.serviceHeading}>Company</p>
               <div className={classes.services}>
                 <p>About</p>
@@ -74,7 +74,7 @@ export default function Footer() {
                 <p>Career</p>
               </div>
             </Grid>
-            <Grid item xs={2}>
+            <Grid item xs={4} sm={2}>
               <Grid
                 container
                 direction="column"

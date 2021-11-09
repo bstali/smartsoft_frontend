@@ -46,11 +46,11 @@ export default function Services() {
             constant improvement. Our specialized services also have:
           </p>
           <Grid container spacing={7}>
-            <Grid item xs={4}>
+            <Grid item xs={12} sm={4}>
               <Card
                 className="service1"
                 sx={{
-                  width: 300,
+                  width: "100%",
                   height: 300,
                   border: "1px solid",
                   borderColor: "#EF3066",
@@ -67,11 +67,11 @@ export default function Services() {
                 </p>
               </Card>
             </Grid>
-            <Grid item xs={4}>
+            <Grid item xs={12} sm={4}>
               <Card
                 className="service2"
                 sx={{
-                  width: 300,
+                  width: "100%",
                   height: 300,
                   backgroundColor: "white",
                   border: "1px solid",
@@ -88,11 +88,11 @@ export default function Services() {
                 </p>
               </Card>
             </Grid>
-            <Grid item xs={4}>
+            <Grid item xs={12} sm={4}>
               <Card
                 className="service3"
                 sx={{
-                  width: 300,
+                  width: "100%",
                   height: 300,
                   backgroundColor: "white",
                   border: "1px solid",
@@ -109,11 +109,11 @@ export default function Services() {
                 </p>
               </Card>
             </Grid>
-            <Grid item xs={4}>
+            <Grid item xs={12} sm={4}>
               <Card
                 className="service4"
                 sx={{
-                  width: 300,
+                  width: "100%",
                   height: 300,
                   backgroundColor: "white",
                   border: "1px solid",
@@ -130,11 +130,11 @@ export default function Services() {
                 </p>
               </Card>
             </Grid>
-            <Grid item xs={4}>
+            <Grid item xs={12} sm={4}>
               <Card
                 className="service5"
                 sx={{
-                  width: 300,
+                  width: "100%",
                   height: 300,
                   backgroundColor: "white",
                   border: "1px solid",
@@ -152,11 +152,11 @@ export default function Services() {
                 </p>
               </Card>
             </Grid>
-            <Grid item xs={4}>
+            <Grid item xs={12} sm={4}>
               <Card
                 className="service6"
                 sx={{
-                  width: 300,
+                  width: "100%",
                   height: 300,
                   backgroundColor: "white",
                   border: "1px solid",
@@ -174,11 +174,11 @@ export default function Services() {
                 </p>
               </Card>
             </Grid>
-            <Grid item xs={4}>
+            <Grid item xs={12} sm={4}>
               <Card
                 className="service7"
                 sx={{
-                  width: 300,
+                  width: "100%",
                   height: 300,
                   backgroundColor: "white",
                   border: "1px solid",
@@ -196,11 +196,11 @@ export default function Services() {
                 </p>
               </Card>
             </Grid>
-            <Grid item xs={4}>
+            <Grid item xs={12} sm={4}>
               <Card
                 className="service8"
                 sx={{
-                  width: 300,
+                  width: "100%",
                   height: 300,
                   backgroundColor: "white",
                   border: "1px solid",
@@ -218,11 +218,11 @@ export default function Services() {
                 </p>
               </Card>
             </Grid>
-            <Grid item xs={4}>
+            <Grid item xs={12} sm={4}>
               <Card
                 className="service9"
                 sx={{
-                  width: 300,
+                  width: "100%",
                   height: 300,
                   backgroundColor: "white",
                   border: "1px solid",
@@ -240,11 +240,11 @@ export default function Services() {
                 </p>
               </Card>
             </Grid>
-            <Grid item xs={4}>
+            <Grid item xs={12} sm={4}>
               <Card
                 className="service10"
                 sx={{
-                  width: 300,
+                  width: "100%",
                   height: 300,
                   backgroundColor: "white",
                   border: "1px solid",
@@ -261,11 +261,11 @@ export default function Services() {
                 </p>
               </Card>
             </Grid>
-            <Grid item xs={4}>
+            <Grid item xs={12} sm={4}>
               <Card
                 className="service11"
                 sx={{
-                  width: 300,
+                  width: "100%",
                   height: 300,
                   backgroundColor: "white",
                   border: "1px solid",
@@ -283,11 +283,11 @@ export default function Services() {
                 </p>
               </Card>
             </Grid>
-            <Grid item xs={4}>
+            <Grid item xs={12} sm={4}>
               <Card
                 className="service12"
                 sx={{
-                  width: 300,
+                  width: "100%",
                   height: 300,
                   backgroundColor: "white",
                   border: "1px solid",

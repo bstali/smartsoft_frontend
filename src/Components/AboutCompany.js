@@ -4,8 +4,8 @@ import Carousel from "react-material-ui-carousel";
 
 const useStyles = makeStyles({
   headingTop: {
-    fontFamily: "Montserrat, Helvetica Neue, Helvetica, Arial, sans-serif",
-    fontWeight: 700,
+    fontFamily: "Roboto, san-serif",
+    fontWeight: 400,
     fontSize: 35,
     color: "#333333",
     margin: 0,

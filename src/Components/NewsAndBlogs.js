@@ -32,7 +32,7 @@ export default function NewsAndBlogs() {
             alignItems="center"
             spacing={2}
           >
-            <Grid item xs={4}>
+            <Grid item xs={12} sm={4}>
               <Card
                 className="newsCard"
                 sx={{
@@ -55,7 +55,7 @@ export default function NewsAndBlogs() {
                 </CardContent>
               </Card>
             </Grid>
-            <Grid item xs={4}>
+            <Grid item xs={12} sm={4}>
               <Card
                 className="newsCard"
                 sx={{
@@ -78,7 +78,7 @@ export default function NewsAndBlogs() {
                 </CardContent>
               </Card>
             </Grid>
-            <Grid item xs={4}>
+            <Grid item xs={12} sm={4}>
               <Card
                 className="newsCard"
                 sx={{

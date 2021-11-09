@@ -106,8 +106,8 @@ export default function ProjectForm() {
   return (
     <>
       <Grid container>
-        <Grid item xs={4}></Grid>
-        <Grid item xs={4}>
+        <Grid item xs={1} sm={4}></Grid>
+        <Grid item xs={10} sm={4}>
           <h2 className={classes.topHeading}>Let's start your project</h2>
           <Paper elevation={3}>
             {/* Name */}
@@ -200,7 +200,7 @@ export default function ProjectForm() {
             Get Started
           </Button>
         </Grid>
-        <Grid item xs={3}></Grid>
+        <Grid item xs={1} sm={4}></Grid>
       </Grid>
 
       <div>

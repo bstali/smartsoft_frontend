@@ -28,19 +28,22 @@ const useStyles = makeStyles({
     borderRadius: 12,
     textTransform: "uppercase",
   },
-  
 });
 export default function Career() {
   const classes = useStyles();
 
   const seeVacancies = () => {
-    document.getElementById("vacancies").scrollIntoView({behavior: "smooth"})
-  }
+    document.getElementById("vacancies").scrollIntoView({ behavior: "smooth" });
+  };
+
+  React.useEffect(() => {
+    window.scrollTo({ top: 0 });
+  }, []);
 
   return (
     <>
       <div className="homeBG">
-        <div style={{ paddingTop: 550 }}>
+        <div style={{ paddingTop: 480 }}>
           <p className={classes.topHeading}>Careers at Smart Soft Studios</p>
           <p className={classes.guidance}>
             We at Smart Soft Studios offer a mix of growth prospects, advance
@@ -56,7 +59,7 @@ export default function Career() {
               borderRadius: 12,
               minWidth: 200,
               fontWeight: 700,
-              marginTop: 5
+              marginTop: 5,
             }}
           >
             See Vacanciecs

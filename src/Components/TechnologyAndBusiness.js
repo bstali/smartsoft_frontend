@@ -14,7 +14,7 @@ const useStyles = makeStyles({
   headingTop: {
     fontFamily: "Montserrat, Helvetica Neue, Helvetica, Arial, sans-serif",
     fontWeight: 700,
-    fontSize: 60,
+    fontSize: 50,
     color: "#333333",
     margin: 0,
   },

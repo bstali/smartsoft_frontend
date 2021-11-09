@@ -21,68 +21,49 @@ export default function AwardWinningProjects() {
   const classes = useStyles();
   const itemData = [
     {
-      img: "https://www.arpatech.com/img/portfolio/portfolio-3-3.png",
-      title: "Breakfast",
+      img: "https://smartsoftstudios.com/images/project-3-370x404.png",
+      title: "Restaurant",
+      link: "",
     },
     {
-      img: "https://www.arpatech.com/img/portfolio/portfolio-1-1.png",
-      title: "Burger",
+      img: "https://smartsoftstudios.com/images/project-4-370x404.png",
+      title: "Constituency",
+      link: "http://cms.awaisleghari.com/",
     },
     {
-      img: "https://www.arpatech.com/img/portfolio/portfolio-2-n.png",
-      title: "Camera",
+      img: "https://smartsoftstudios.com/images/project-5-370x404.png",
+      title: "MT-Barrels",
+      link: "https://apps.apple.com/tt/app/m-t-barrels/id827791368",
     },
     {
-      img: "https://www.arpatech.com/img/portfolio/portfolio-4-n.png",
-      title: "Coffee",
+      img: "https://smartsoftstudios.com/images/project-6-370x404.png",
+      title: "Buttons",
+      link: "https://play.google.com/store/apps/details?id=com.toneaphone.soundboard",
     },
     {
-      img: "https://www.arpatech.com/img/portfolio/portfolio-5-5.png",
-      title: "Hats",
+      img: "https://smartsoftstudios.com/images/project-7-370x404.png",
+      title: "Siltons",
+      link: "https://dougsilton.com/ ",
     },
     {
-      img: "https://www.arpatech.com/img/portfolio/portfolio-8-8.png",
-      title: "Honey",
+      img: "https://smartsoftstudios.com/images/project-8-370x404.png",
+      title: "Tubers",
+      link: "https://apps.apple.com/us/app/tubers-tycoon/id1128104519",
     },
     {
-      img: "https://www.arpatech.com/img/portfolio/portfolio-9-9.png",
-      title: "Basketball",
+      img: "https://smartsoftstudios.com/images/project-9-370x404.png",
+      title: "Alarabia",
+      link: "https://play.google.com/store/apps/details?id=com.services.ymaalarabia&hl=en",
     },
     {
-      img: "https://www.arpatech.com/img/portfolio/portfolio-10-10.png",
-      title: "Fern",
+      img: "https://smartsoftstudios.com/images/project-1-370x404.png",
+      title: "BookedYa",
+      link: "https://www.bookedya.com/",
     },
     {
-      img: "https://www.arpatech.com/img/portfolio/portfolio-11-11.png",
-      title: "Mushrooms",
-    },
-    {
-      img: "https://www.arpatech.com/img/portfolio/portfolio-12-12.png",
-      title: "Tomato basil",
-    },
-    {
-      img: "https://www.arpatech.com/img/portfolio/portfolio-13.png",
-      title: "Sea star",
-    },
-    {
-      img: "https://www.arpatech.com/img/portfolio/portfolio-14.png",
-      title: "Bike",
-    },
-    {
-      img: "https://www.arpatech.com/img/portfolio/portfolio-15.png",
-      title: "Bike",
-    },
-    {
-      img: "https://www.arpatech.com/img/portfolio/portfolio-16.png",
-      title: "Bike",
-    },
-    {
-      img: "https://www.arpatech.com/img/portfolio/portfolio-4-4.png",
-      title: "Bike",
-    },
-    {
-      img: "https://www.arpatech.com/img/portfolio/portfolio-5-n.png",
-      title: "Bike",
+      img: "https://smartsoftstudios.com/images/project-2-370x404.png",
+      title: "Iscaped",
+      link: "https://www.iscapeit.com/",
     },
   ];
   return (
@@ -90,23 +71,28 @@ export default function AwardWinningProjects() {
       <p className={classes.headingTop}>AWARD WINNING PROJECTS</p>
       <Grid
         container
-        direction="column"
-        justifyContent="flex-start"
-        alignItems="center"
+        direction="row"
+        justifyContent="center"
+        alignItems="flex-start"
       >
         <Grid item xs={2}></Grid>
         <Grid item xs={8}>
-          <ImageList sx={{ width: 1000, height: 950, overflow: "hidden"}} cols={4}>
+          <ImageList
+            sx={{ width: "100%", height: 600, overflow: "hidden" }}
+            cols={3}
+          >
             {itemData.map((item) => (
-              <ImageListItem key={item.img}>
-                <img
-                  className="awardWinningImages"
-                  src={`${item.img}?w=164&h=164&fit=crop&auto=format`}
-                  srcSet={`${item.img}?w=164&h=164&fit=crop&auto=format&dpr=2 2x`}
-                  alt={item.title}
-                  loading="lazy"
-                />
-              </ImageListItem>
+              <a href={item.link} target="_blank" rel="noopener noreferrer">
+                <ImageListItem key={item.img}>
+                  <img
+                    className="awardWinningImages"
+                    src={`${item.img}?w=164&h=164&fit=crop&auto=format`}
+                    srcSet={`${item.img}?w=164&h=164&fit=crop&auto=format&dpr=2 2x`}
+                    alt={item.title}
+                    loading="lazy"
+                  />
+                </ImageListItem>
+              </a>
             ))}
           </ImageList>
         </Grid>

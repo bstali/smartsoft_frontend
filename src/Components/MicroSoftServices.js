@@ -7,7 +7,8 @@ const UseStyles = makeStyles({
     fontSize: 50,
     fontFamily: "Montserrat, Helvetica Neue, Helvetica, Arial, sans-serif",
     fontWeight: 700,
-    padding: 80,
+    paddingTop: 80,
+    paddingBottom: 80,
     color: "#333333",
   },
   img: {
@@ -18,7 +19,6 @@ const UseStyles = makeStyles({
     fontFamily: "Montserrat, Helvetica Neue, Helvetica, Arial, sans-serif",
     fontWeight: 500,
     color: "#333333",
-
   },
 });
 
