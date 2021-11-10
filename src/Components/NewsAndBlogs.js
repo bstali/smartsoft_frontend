@@ -2,6 +2,7 @@ import React from "react";
 import { Grid, Card, CardContent, CardMedia } from "@mui/material";
 import { makeStyles } from "@mui/styles";
 import "../Pages/Home.css";
+import CardImage from "../Asset/Images/bg_paperold.png"
 
 const useStyles = makeStyles({
   headingTop: {
@@ -44,7 +45,7 @@ export default function NewsAndBlogs() {
                 <CardMedia
                   component="img"
                   height="140"
-                  image="https://www.arpatech.com/img/PR-ISO-9001-2015-2.jpg"
+                  image={CardImage}
                   alt="img"
                 />
                 <CardContent className={classes.cardContent}>
@@ -67,7 +68,7 @@ export default function NewsAndBlogs() {
                 <CardMedia
                   component="img"
                   height="140"
-                  image="https://www.arpatech.com/img/PR-ISO-27001-2013-02.jpg"
+                  image={CardImage}
                   alt="img"
                 />
                 <CardContent className={classes.cardContent}>
@@ -90,7 +91,7 @@ export default function NewsAndBlogs() {
                 <CardMedia
                   component="img"
                   height="140"
-                  image="https://www.arpatech.com/img/PR-ISO-27001-2013-02.jpg"
+                  image={CardImage}
                   alt="img"
                 />
                 <CardContent className={classes.cardContent}>

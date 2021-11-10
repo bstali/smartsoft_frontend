@@ -5,9 +5,8 @@ import Services from "../Components/Services";
 import MicroSoftServices from "../Components/MicroSoftServices";
 import ContactGuidlines from "../Components/ContactGuidlines";
 import NewsAndBlogs from "../Components/NewsAndBlogs";
-import AwardWinningProjects from "../Components/AwardWinningProject";
-import TechnologyAndBusiness from "../Components/TechnologyAndBusiness";
-import AboutCompany from "../Components/AboutCompany";
+import RecentProjects from "../Components/RecentProjects";
+import TechnologyWeUse from "../Components/TechnologyWeUse";
 import "./Home.css";
 import Intro from "../Components/Intro";
 
@@ -87,13 +86,10 @@ export default function Home() {
         <NewsAndBlogs />
       </div>
       <div id="awardwinprojects">
-        <AwardWinningProjects />
+        <RecentProjects />
       </div>
       <div>
-        <TechnologyAndBusiness />
-      </div>
-      <div>
-        <AboutCompany />
+        <TechnologyWeUse />
       </div>
       <div>
         <Contact />
