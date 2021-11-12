@@ -2,7 +2,7 @@ import React from "react";
 import { Grid, Card, CardContent, CardMedia } from "@mui/material";
 import { makeStyles } from "@mui/styles";
 import "../Pages/Home.css";
-import CardImage from "../Asset/Images/bg_paperold.png"
+import CardImage from "../Asset/Images/OtherImages/bg_paperold.png"
 
 const useStyles = makeStyles({
   headingTop: {
@@ -10,6 +10,7 @@ const useStyles = makeStyles({
     fontWeight: 700,
     fontSize: 30,
     color: "#333333",
+    paddingTop: 100
   },
   cardContent: {
     fontFamily: "Montserrat",

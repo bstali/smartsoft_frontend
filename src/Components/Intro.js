@@ -1,7 +1,7 @@
 import React from "react";
 import { makeStyles } from "@mui/styles";
 import Carousel from "react-material-ui-carousel";
-import Logo from "../Asset/Images/SmartSoftLogov44-02-2.png"
+import Logo from "../Asset/Images/OtherImages/SmartSoftLogo.png"
 
 const useStyles = makeStyles({
   topHeading: {
@@ -66,7 +66,7 @@ export default function Intro() {
         WORLD'S FINEST <br />
         TECHNOLOGY HUB
       </p>
-      <Carousel interval={3000} autoPlay={true} animation="slide" IndicatorIcon={false}>
+      <Carousel interval={5000} autoPlay={true} animation="slide" IndicatorIcon={false} navButtonsAlwaysInvisible={true}>
         {items.map((item) => 
         <div>
         <p className={classes.descriptionHeading}>{item.name}</p>

@@ -1,6 +1,9 @@
 import React from "react";
 import { makeStyles } from "@mui/styles";
 import Grid from "@mui/material/Grid";
+import PhoneAndroidIcon from "@mui/icons-material/PhoneAndroid";
+import ForumIcon from "@mui/icons-material/Forum";
+import EmailIcon from "@mui/icons-material/Email";
 
 const useStyles = makeStyles({
   text: {
@@ -39,22 +42,16 @@ export default function ContactGuidlines() {
             </p>
           </Grid>
           <Grid item xs={4} sm={3}>
-            <span className={classes.span}>
-              <img src="https://www.arpatech.com/img/tel-1-1.png" alt="phone" />
-              +1 (800) 214-3513
-            </span>
+            <PhoneAndroidIcon style={{ fontSize: 60, color: "white" }} />
+            <span className={classes.span}>+1 (800) 214-3513</span>
           </Grid>
           <Grid item xs={4} sm={3}>
-            <span className={classes.span}>
-              <img src="https://www.arpatech.com/img/tel-2.png" alt="chat" />
-              Live Chat
-            </span>
+            <ForumIcon style={{ fontSize: 60, color: "white" }} />
+            <span className={classes.span}>Live Chat</span>
           </Grid>
           <Grid item xs={4} sm={3}>
-            <span className={classes.span}>
-              <img src="https://www.arpatech.com/img/tel-3.png" alt="email" />
-              Email Us
-            </span>
+            <EmailIcon style={{ fontSize: 60, color: "white" }} />
+            <span className={classes.span}>Email Us</span>
           </Grid>
         </Grid>
       </Grid>

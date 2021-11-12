@@ -42,7 +42,7 @@ export default function Career() {
 
   return (
     <>
-      <div className="homeBG">
+      <div style={{height:window.innerHeight}} className="homeBG">
         <div style={{ paddingTop: 480 }}>
           <p className={classes.topHeading}>Careers at Smart Soft Studios</p>
           <p className={classes.guidance}>

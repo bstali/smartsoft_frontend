@@ -50,7 +50,7 @@ export default function Contact() {
   }, []);
   return (
     <div style={{ backgroundColor: "#F5F5F5" }}>
-      <div className="homeBG">
+      <div style={{height:window.innerHeight}} className="homeBG">
         <ProjectForm />
       </div>
       <Grid container style={{ paddingTop: 50, paddingBottom: 50 }}>
