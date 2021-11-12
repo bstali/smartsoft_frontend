@@ -147,6 +147,13 @@
   background-position: center;
   box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.7);
 }
+.aboutBG {
+  background-image: url("../Asset/Images/OtherImages/team.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.7);
+}
 
 .home {
   padding-top: 400;

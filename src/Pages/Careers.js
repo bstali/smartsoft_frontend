@@ -41,7 +41,7 @@ export default function Career() {
   }, []);
 
   return (
-    <>
+    <div style={{ backgroundColor: "#F5F5F5" }}>
       <div style={{height:window.innerHeight}} className="homeBG">
         <div style={{ paddingTop: 480 }}>
           <p className={classes.topHeading}>Careers at Smart Soft Studios</p>
@@ -73,6 +73,6 @@ export default function Career() {
         </Grid>
         <Grid Item xs={1}></Grid>
       </Grid>
-    </>
+    </div>
   );
 }

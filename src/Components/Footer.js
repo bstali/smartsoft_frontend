@@ -62,7 +62,7 @@ export default function Footer() {
           <Grid item xs={4} sm={3}>
             <p className={classes.serviceHeading}>Company</p>
             <div className={classes.services}>
-              <Link to="" className={classes.links}>
+              <Link to="/About-Us" className={classes.links}>
                 <p>About</p>
               </Link>
               <Link to="/Careers" className={classes.links}>
@@ -96,7 +96,7 @@ export default function Footer() {
               />
               <SocialIcon
                 url="https://googleplus.com"
-                style={{ height: 40, width: 40, marginTop: 5, marginBottom: 5 }}
+                style={{ height: 40, width: 40, marginTop: 5, marginBottom: 15 }}
               />
             </Grid>
           </Grid>
