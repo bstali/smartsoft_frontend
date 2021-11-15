@@ -39,14 +39,14 @@ export default function Home() {
                         <Intro />
                     </div>
                     <Grid container direction="row" justifyContent="center" alignItems="center">
-                        <Grid item xs={1} sm={4}></Grid>
-                        <Grid item xs={10} sm={4}>
+                        <Grid item xs={1} sm={2} md={3}></Grid>
+                        <Grid item xs={10} sm={8} md={6}>
                             <div
                                 style={{
-                                    marginLeft: 40,
                                     marginTop: 80,
                                     marginBottom: 100,
-                                    display: 'flex'
+                                    display: 'flex',
+                                    justifyContent: "center"
                                 }}>
                                 <Button
                                     className="srvsBtn"
@@ -57,7 +57,7 @@ export default function Home() {
                                         borderRadius: 12,
                                         padding: '5px 20px 5px 20px',
                                         // Width: 500,
-                                        fontWeight: 700
+                                        fontWeight: 700,
                                     }}>
                                     View Services
                                 </Button>
@@ -78,7 +78,7 @@ export default function Home() {
                                 </Button>
                             </div>
                         </Grid>
-                        <Grid item xs={1} sm={4}></Grid>
+                        <Grid item xs={1} sm={2} md={3}></Grid>
                     </Grid>
                 </div>
                 <div style={{backgroundColor: '#F5F5F5'}}>

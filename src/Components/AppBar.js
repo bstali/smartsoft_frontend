@@ -45,10 +45,13 @@ export default function NavBar() {
                 }}
                 className={colorChange ? 'navbar colorChange' : 'navbar'}>
                 <Grid container direction="row" justifyContent="center" alignItems="center">
-                    <Grid item xs={2}></Grid>
-                    <Grid item xs={8}>
+                    <Grid item xs={0} sm={2}></Grid>
+                    <Grid item xs={12} sm={8}>
                         <NavLink exact to="/" className={classes.navItems}>
                             Home
+                        </NavLink>
+                        <NavLink exact to="/About-Us" className={classes.navItems}>
+                            About
                         </NavLink>
                         <NavLink exact to="/Contact-Us" className={classes.navItems}>
                             Contact
@@ -57,7 +60,7 @@ export default function NavBar() {
                             Careers
                         </NavLink>
                     </Grid>
-                    <Grid item xs={2}>
+                    <Grid item xs={12} sm={2}>
                         <GetAFreeQuote />
                     </Grid>
                 </Grid>

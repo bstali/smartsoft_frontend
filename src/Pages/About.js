@@ -7,7 +7,7 @@ import Team from '../Components/Team'
 
 const useStyles = makeStyles({
     topHeading: {
-        fontSize: 50,
+        fontSize: '5vmin',
         textTransform: 'uppercase',
         fontFamily: 'Montserrat, sans-serif',
         fontWeight: 700,
@@ -15,7 +15,7 @@ const useStyles = makeStyles({
         margin: 0
     },
     subHeading: {
-        fontSize: 20,
+        fontSize: '2vmin',
         textTransform: 'uppercase',
         fontFamily: 'Montserrat, sans-serif',
         fontWeight: 500,

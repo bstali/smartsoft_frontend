@@ -7,11 +7,11 @@ import '../Pages/Home.css'
 
 const useStyles = makeStyles({
     topHeading: {
-        fontSize: 32,
+        fontSize: "2.2vw",
         fontFamily: 'Montserrat, Helvetica Neue, Helvetica, Arial, sans-serif',
         textTransform: 'uppercase',
         color: 'white',
-        paddingTop: 40
+        paddingTop: 60
     },
     country: {
         minHeight: 60,
@@ -97,8 +97,8 @@ export default function ProjectForm() {
     return (
         <>
             <Grid container>
-                <Grid item xs={1} sm={4}></Grid>
-                <Grid item xs={10} sm={4}>
+                <Grid item xs={1} sm={3} md={4}></Grid>
+                <Grid item xs={10} sm={6} md={4}>
                     <h2 className={classes.topHeading}>Let's start your project</h2>
                     <Paper elevation={3}>
                         {/* Name */}
@@ -136,7 +136,7 @@ export default function ProjectForm() {
                         Get Started
                     </Button>
                 </Grid>
-                <Grid item xs={1} sm={4}></Grid>
+                <Grid item xs={1} sm={3} md={4}></Grid>
             </Grid>
 
             <div>

@@ -6,8 +6,8 @@ import '../Pages/Home.css'
 const useStyles = makeStyles({
     headingTop: {
         fontFamily: 'Montserrat, Helvetica Neue, Helvetica, Arial, sans-serif',
-        fontWeight: 700,
-        fontSize: 30,
+        fontWeight: 500,
+        fontSize: '6vmin',
         color: '#333333',
         textTransform: 'uppercase'
     },

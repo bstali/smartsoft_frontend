@@ -7,7 +7,7 @@ const useStyles = makeStyles({
         fontFamily: 'Montserrat, Helvetica Neue, Helvetica, Arial, sans-serif',
         textTransform: 'uppercase',
         marginBottom: 30,
-        fontSize: 30,
+        fontSize: '6vmin',
         marginTop: 100
     }
 })

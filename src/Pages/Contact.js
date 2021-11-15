@@ -9,13 +9,13 @@ const useStyles = makeStyles({
     officesHeading: {
         color: '#4a4a4a',
         margin: 0,
-        fontSize: 45,
+        fontSize: "6vmin",
         fontFamily: 'Montserrat, sans-serif',
         textTransform: 'uppercase',
         textAlign: 'left'
     },
     continentsName: {
-        fontSize: 24,
+        fontSize: "4vmin",
         margin: 0,
         marginTop: 10,
         color: '#ef3066',
@@ -25,14 +25,14 @@ const useStyles = makeStyles({
     },
     country: {
         fontFamily: 'Montserrat, sans-serif',
-        fontSize: 21,
+        fontSize: "2.1vw",
         color: '#4a4a4a',
         textTransform: 'uppercase',
         textAlign: 'left'
     },
     city: {
         fontFamily: 'Montserrat, sans-serif',
-        fontSize: 17,
+        fontSize: "1vw",
         color: '#4a4a4a',
         textTransform: 'uppercase',
         textAlign: 'left'
@@ -57,10 +57,10 @@ export default function Contact() {
                 <Grid item xs={1}></Grid>
                 <Grid item xs={10}>
                     <Grid container direction="row" justifyContent="center" alignItems="center" spacing={5}>
-                        <Grid item xs={12} sm={5}>
+                        <Grid item xs={12} md={5}>
                             <MapChart />
                         </Grid>
-                        <Grid item xs={12} sm={7}>
+                        <Grid item xs={12} md={7}>
                             <div>
                                 <p className={classes.officesHeading}>Our Global Offices</p>
                             </div>

@@ -7,8 +7,8 @@ import CardImage from '../Asset/Images/OtherImages/bg_paperold.png'
 const useStyles = makeStyles({
     headingTop: {
         fontFamily: 'Montserrat, Helvetica Neue, Helvetica, Arial, sans-serif',
-        fontWeight: 700,
-        fontSize: 30,
+        fontWeight: 500,
+        fontSize: '6vmin',
         color: '#333333',
         paddingTop: 100
     },
@@ -28,11 +28,11 @@ export default function NewsAndBlogs() {
                 <Grid item xs={2}></Grid>
                 <Grid item xs={8}>
                     <Grid container direction="row" justifyContent="center" alignItems="center" spacing={2}>
-                        <Grid item xs={12} sm={4}>
+                        <Grid item xs={12} md={4}>
                             <Card
                                 className="newsCard"
                                 sx={{
-                                    maxWidth: 345,
+                                    width: '100%',
                                     border: '2px solid',
                                     borderColor: '#EF3066'
                                 }}>
@@ -40,11 +40,11 @@ export default function NewsAndBlogs() {
                                 <CardContent className={classes.cardContent}>Smart Soft Studios is proud to be awarded ISO 9001:2015 certification for its quality management systems. The attainment of this certification will help us adopt a quality management system which,</CardContent>
                             </Card>
                         </Grid>
-                        <Grid item xs={12} sm={4}>
+                        <Grid item xs={12} md={4}>
                             <Card
                                 className="newsCard"
                                 sx={{
-                                    maxWidth: 345,
+                                    width: '100%',
                                     border: '2px solid',
                                     borderColor: '#EF3066'
                                 }}>
@@ -52,11 +52,11 @@ export default function NewsAndBlogs() {
                                 <CardContent className={classes.cardContent}>Smart Soft Studios is proud to be awarded ISO 9001:2015 certification for its quality management systems. The attainment of this certification will help us adopt a quality management system which,</CardContent>
                             </Card>
                         </Grid>
-                        <Grid item xs={12} sm={4}>
+                        <Grid item xs={12} md={4}>
                             <Card
                                 className="newsCard"
                                 sx={{
-                                    maxWidth: 345,
+                                    width: '100%',
                                     border: '2px solid',
                                     borderColor: '#EF3066'
                                 }}>

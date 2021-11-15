@@ -7,7 +7,7 @@ import './Home.css'
 
 const useStyles = makeStyles({
     topHeading: {
-        fontSize: 48,
+        fontSize: "6vmin",
         fontFamily: 'Montserrat, Helvetica Neue, Helvetica, Arial, sans-serif',
         textTransform: 'uppercase',
         fontWeight: 700,
@@ -16,7 +16,7 @@ const useStyles = makeStyles({
     },
     guidance: {
         fontFamily: 'Montserrat, Helvetica Neue, Helvetica, Arial, sans-serif',
-        fontSize: '13pt',
+        fontSize: '2vmin',
         fontWeight: 400,
         width: '80%',
         margin: '0 auto',

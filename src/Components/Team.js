@@ -25,8 +25,8 @@ export default function NewsAndBlogs() {
                     <Grid container direction="row" justifyContent="center" alignItems="center" spacing={2}>
                         <Grid item xs={12}>
                             <Grid container>
-                                <Grid item xs={4}></Grid>
-                                <Grid item xs={4}>
+                                <Grid item xs={0} sm={4}></Grid>
+                                <Grid item xs={12}  sm={4}>
                                     <Card
                                         className="newsCard"
                                         sx={{
@@ -47,7 +47,7 @@ export default function NewsAndBlogs() {
                                         </CardContent>
                                     </Card>
                                 </Grid>
-                                <Grid item xs={4}></Grid>
+                                <Grid item xs={0}  sm={4}></Grid>
                             </Grid>
                         </Grid>
                         <Grid item xs={12} sm={4}>

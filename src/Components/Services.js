@@ -5,27 +5,21 @@ import LaptopIcon from '@mui/icons-material/Laptop'
 import PhoneAndroidIcon from '@mui/icons-material/PhoneAndroid'
 import SettingsSuggestIcon from '@mui/icons-material/SettingsSuggest'
 import FilterDramaIcon from '@mui/icons-material/FilterDrama'
-import PersonIcon from '@mui/icons-material/Person'
 import ShoppingCartIcon from '@mui/icons-material/ShoppingCart'
-import CloudIcon from '@mui/icons-material/Cloud'
-import GroupIcon from '@mui/icons-material/Group'
-import BusinessCenterIcon from '@mui/icons-material/BusinessCenter'
-import AccessibilityNewIcon from '@mui/icons-material/AccessibilityNew'
-import AddBusinessIcon from '@mui/icons-material/AddBusiness'
 import '../Pages/Home.css'
 
 const useStyles = makeStyles({
-    midHeading: {
-        fontSize: 45,
+    topHeading: {
+        fontSize: '6vmin',
         color: '#333',
-        fontFamily: 'Montserrat',
-        fontWeight: 400,
+        fontFamily: 'Montserrat, Helvetica Neue, Helvetica, Arial, sans-serif',
+        fontWeight: 500,
         marginTop: 150
     },
     servicesDescription: {
         color: '#333',
-        fontSize: 16,
-        fontFamily: 'arial',
+        fontSize: '2vmin',
+        fontFamily: 'Montserrat, Helvetica Neue, Helvetica, Arial, sans-serif',
         lineHeight: 1.75,
         fontWeight: 500
     }
@@ -38,7 +32,7 @@ export default function Services() {
             <Grid container>
                 <Grid item xs={2}></Grid>
                 <Grid item xs={8}>
-                    <h2 className={classes.midHeading}>WHAT WE DO</h2>
+                    <h2 className={classes.topHeading}>WHAT WE DO</h2>
                     <p className={classes.servicesDescription}>We have a refined process after we have taken up a project. We offer the platform from where the projects take shape through stages of planning, testing and execution. In this aspect we follow an agile methodology and run the project through a loop of feedback and constant improvement. Our specialized services also have:</p>
                     <Grid container spacing={7}>
                         <Grid item xs={12} sm={12} md={6} lg={6}>

@@ -19,7 +19,7 @@ const useStyles = makeStyles({
     subHeading: {
         fontFamily: 'Montserrat, Helvetica Neue, Helvetica, Arial, sans-serif',
         fontWeight: 400,
-        fontSize: 35,
+        fontSize: "3vmin",
         color: '#333333',
         margin: 0,
         textTransform: 'uppercase'
@@ -29,8 +29,8 @@ const useStyles = makeStyles({
     },
     headingTop: {
         fontFamily: 'Montserrat, Helvetica Neue, Helvetica, Arial, sans-serif',
-        fontWeight: 700,
-        fontSize: 50,
+        fontWeight: 500,
+        fontSize: "6vmin",
         color: '#333333',
         margin: 0
     },

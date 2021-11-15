@@ -5,14 +5,14 @@ import Logo from '../Asset/Images/OtherImages/SmartSoftLogo.png'
 
 const useStyles = makeStyles({
     topHeading: {
-        fontSize: 48,
+        fontSize: '6vmin',
         fontFamily: 'Montserrat, Helvetica Neue, Helvetica, Arial, sans-serif',
         textTransform: 'uppercase',
         color: 'white'
     },
     descriptionHeading: {
         color: '#EF3066',
-        fontSize: 20,
+        fontSize: "3vmin",
         fontWeight: 700,
         fontFamily: 'Montserrat'
     },
@@ -20,7 +20,7 @@ const useStyles = makeStyles({
         fontFamily: 'Montserrat',
         textAlign: 'center',
         margin: '0 auto',
-        fontSize: 13,
+        fontSize: "2vmin",
         fontWeight: 400,
         width: '70%',
         color: 'white'
@@ -54,7 +54,7 @@ export default function Intro() {
 
     return (
         <div style={{paddingTop: 150}}>
-            <img src={Logo} alt="logo" style={{width: '60%'}} />
+            <img src={Logo} alt="logo" style={{width: '65%'}} />
             <p className={classes.topHeading}>TECHNOLOGY HUB</p>
             <Carousel interval={5000} autoPlay={true} animation="slide" IndicatorIcon={false} navButtonsAlwaysInvisible={true}>
                 {items.map((item) => (
