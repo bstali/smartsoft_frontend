@@ -50,11 +50,11 @@ export default function JobTable() {
                     <TableBody>
                         {jobs.map((job) => (
                             <StyledTableRow key={job.title}>
-                                <StyledTableCell component="th" scope="row">
+                                <StyledTableCell component="th" scope="row" style={{fontSize:"3vmin"}}>
                                     {job.title}
                                 </StyledTableCell>
                                 <StyledTableCell align="right">
-                                    <Button variant="contained" onClick={handleClickOpen}>
+                                    <Button variant="contained" onClick={handleClickOpen} style={{fontSize:"2vmin"}}>
                                         Apply
                                     </Button>
                                 </StyledTableCell>

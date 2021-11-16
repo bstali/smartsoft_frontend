@@ -22,6 +22,13 @@ const useStyles = makeStyles({
         fontFamily: 'Montserrat, Helvetica Neue, Helvetica, Arial, sans-serif',
         lineHeight: 1.75,
         fontWeight: 500
+    },
+    cardHeadings: {
+        fontSize: '2.5vmin',
+        fontFamily: 'Montserrat, Helvetica Neue, Helvetica, Arial, sans-serif',
+    },
+    cardDescription: {
+        fontSize: '1.8vmin',
     }
 })
 
@@ -44,9 +51,9 @@ export default function Services() {
                                     border: '1px solid',
                                     borderColor: '#EF3066'
                                 }}>
-                                <LaptopIcon className="icon1" style={{fontSize: 50, marginTop: 50, color: '#EF3066'}} />
-                                <h3>Web design & development</h3>
-                                <p>We create a smooth user experience for every web design and development project we take.</p>
+                                <LaptopIcon style={{fontSize: 50, marginTop: 50, color: '#EF3066'}} />
+                                 <p className={classes.cardHeadings}>Web design & development</p>
+                                <p className={classes.cardDescription}>We create a smooth user experience for every web design and development project we take.</p>
                             </Card>
                         </Grid>
                         <Grid item xs={12} sm={12} md={6} lg={6}>
@@ -60,8 +67,8 @@ export default function Services() {
                                     borderColor: '#EF3066'
                                 }}>
                                 <PhoneAndroidIcon style={{fontSize: 50, marginTop: 50, color: '#EF3066'}} />
-                                <h3>Mobile App Development</h3>
-                                <p>Smart Soft Studios enjoins a hallmark of projects in mobile application development and contributed to the industry</p>
+                                  <p className={classes.cardHeadings}>Mobile App Development</p>
+                                <p className={classes.cardDescription}>Smart Soft Studios enjoins a hallmark of projects in mobile application development and contributed to the industry</p>
                             </Card>
                         </Grid>
                         <Grid item xs={12} sm={12} md={6} lg={6}>
@@ -75,8 +82,8 @@ export default function Services() {
                                     borderColor: '#EF3066'
                                 }}>
                                 <SettingsSuggestIcon style={{fontSize: 50, marginTop: 50, color: '#EF3066'}} />
-                                <h3>Game Development</h3>
-                                <p>Unity3D</p>
+                                  <p className={classes.cardHeadings}>Game Development</p>
+                                <p className={classes.cardDescription}>Unity3D</p>
                             </Card>
                         </Grid>
                         <Grid item xs={12} sm={12} md={6} lg={6}>
@@ -90,8 +97,8 @@ export default function Services() {
                                     borderColor: '#EF3066'
                                 }}>
                                 <SettingsSuggestIcon style={{fontSize: 50, marginTop: 50, color: '#EF3066'}} />
-                                <h3>BlockChain Development</h3>
-                                <p>For various startups and established businesses alike, our exceptional software development company</p>
+                                  <p className={classes.cardHeadings}>BlockChain Development</p>
+                                <p className={classes.cardDescription}>For various startups and established businesses alike, our exceptional software development company</p>
                             </Card>
                         </Grid>
                         <Grid item xs={12} sm={12} md={6} lg={6}>
@@ -105,8 +112,8 @@ export default function Services() {
                                     borderColor: '#EF3066'
                                 }}>
                                 <FilterDramaIcon style={{fontSize: 50, marginTop: 50, color: '#EF3066'}} />
-                                <h3>Startup Solution</h3>
-                                <p>We are the enablers of tech-savvy and budding entrepreneurs. We groom and nurture entrepreneurs from various industries</p>
+                                  <p className={classes.cardHeadings}>Startup Solution</p>
+                                <p className={classes.cardDescription}>We are the enablers of tech-savvy and budding entrepreneurs. We groom and nurture entrepreneurs from various industries</p>
                             </Card>
                         </Grid>
                         <Grid item xs={12} sm={12} md={6} lg={6}>
@@ -120,8 +127,8 @@ export default function Services() {
                                     borderColor: '#EF3066'
                                 }}>
                                 <ShoppingCartIcon style={{fontSize: 50, marginTop: 50, color: '#EF3066'}} />
-                                <h3>Ecommerce Solution</h3>
-                                <p>E-commerce solution requires a technically holistic approach and it caters to all aspects including, design, development and e-cart.</p>
+                                  <p className={classes.cardHeadings}>Ecommerce Solution</p>
+                                <p className={classes.cardDescription}>E-commerce solution requires a technically holistic approach and it caters to all aspects including, design, development and e-cart.</p>
                             </Card>
                         </Grid>
                     </Grid>

@@ -39,7 +39,8 @@ const useStyles = makeStyles({
     },
     address: {
         color: '#4a4a4a',
-        textAlign: 'left'
+        textAlign: 'left',
+        fontSize: '2.5vmin'
     }
 })
 

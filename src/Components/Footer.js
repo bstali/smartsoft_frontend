@@ -9,7 +9,7 @@ const useStyles = makeStyles({
     footer: {
         color: 'grey',
         fontFamily: 'Montserrat, Helvetica Neue, Helvetica, Arial, sans-serif',
-        paddingTop: 50
+        paddingTop: 50,
     },
     serviceHeading: {
         color: '#4a4a4a',
