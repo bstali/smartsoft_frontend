@@ -14,9 +14,9 @@ const useStyles = makeStyles({
         paddingTop: 60
     },
     country: {
-        minHeight: 60,
+        minHeight: 55,
         fontFamily: 'Montserrat, sans-serif',
-        color: '#4a4a4a'
+        color: '#666666',
     },
     btn: {
         borderRadius: 12,
@@ -97,16 +97,16 @@ export default function ProjectForm() {
     return (
         <>
             <Grid container>
-                <Grid item xs={1} sm={3} md={4}></Grid>
-                <Grid item xs={10} sm={6} md={4}>
+                <Grid item xs={1} sm={2} md={4}></Grid>
+                <Grid item xs={10} sm={8} md={4}>
                     <h2 className={classes.topHeading}>Let's start your project</h2>
                     <Paper elevation={3}>
                         {/* Name */}
-                        <TextField style={{marginTop: 10, maxWidth: 600}} required id="outlined-required" variant="outlined" fullWidth label="YOUR NAME" value={name} onChange={nameChangeHander} />
+                        <TextField style={{marginTop: 10, width: "90%"}} required id="outlined-required" variant="outlined" label="YOUR NAME" value={name} onChange={nameChangeHander} />
                         {/* Email */}
-                        <TextField style={{marginTop: 10, maxWidth: 600}} required id="outlined-required" variant="outlined" fullWidth label="YOUR EMAIL" value={email} onChange={emailChangeHander} />
+                        <TextField style={{marginTop: 10, width: "90%"}} required id="outlined-required" variant="outlined" label="YOUR EMAIL" value={email} onChange={emailChangeHander} />
                         {/* Project Type*/}
-                        <TextField style={{marginTop: 10, maxWidth: 600}} id="outlined-select-currency" select label="SELECT PROJECT" fullWidth value={projectType} onChange={projectTypeChangeHander}>
+                        <TextField style={{marginTop: 10, width: "90%"}} id="outlined-select-currency" select label="SELECT PROJECT" value={projectType} onChange={projectTypeChangeHander}>
                             {projectTypes.map((option) => (
                                 <MenuItem key={option.value} value={option.value}>
                                     {option.label}
@@ -114,13 +114,13 @@ export default function ProjectForm() {
                             ))}
                         </TextField>
                         {/* Select Country */}
-                        <FormControl style={{marginTop: 10, maxWidth: 600}} variant="outlined" fullWidth>
+                        <FormControl style={{marginTop: 10, width: "90%"}} variant="outlined">
                             <CountryDropdown classes={classes.country} value={country} onChange={selectCountry} />
                         </FormControl>
                         {/* Phone */}
-                        <TextField style={{marginTop: 10, maxWidth: 600}} required id="outlined-required" variant="outlined" fullWidth label="YOUR PHONE" value={phone} onChange={phoneChangeHander} />
+                        <TextField style={{marginTop: 10, width: "90%"}} required id="outlined-required" variant="outlined" label="YOUR PHONE" value={phone} onChange={phoneChangeHander} />
                         {/* Message */}
-                        <TextField style={{marginTop: 10, marginBottom: 10, maxWidth: 600}} required id="outlined-required" variant="outlined" fullWidth multiline rows={4} label="YOUR MESSAGE" value={message} onChange={messageChangeHander} />
+                        <TextField style={{marginTop: 10, marginBottom: 10, width: "90%"}} required id="outlined-required" variant="outlined" multiline rows={4} label="YOUR MESSAGE" value={message} onChange={messageChangeHander} />
                     </Paper>
                     <Button
                         className="srvsBtn"
@@ -136,7 +136,7 @@ export default function ProjectForm() {
                         Get Started
                     </Button>
                 </Grid>
-                <Grid item xs={1} sm={3} md={4}></Grid>
+                <Grid item xs={1} sm={2} md={4}></Grid>
             </Grid>
 
             <div>

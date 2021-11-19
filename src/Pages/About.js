@@ -12,7 +12,8 @@ const useStyles = makeStyles({
         fontFamily: 'Montserrat, sans-serif',
         fontWeight: 700,
         float: 'left',
-        margin: 0
+        margin: 0,
+        paddingTop: 70
     },
     subHeading: {
         fontSize: '2vmin',
@@ -24,7 +25,8 @@ const useStyles = makeStyles({
     details: {
         color: '#878787',
         textAlign: 'left',
-        margin: 0
+        margin: 0,
+        // textAlign: "center"
     }
 })
 export default function Career() {
@@ -56,7 +58,7 @@ export default function Career() {
                             <p className={classes.details}>We started in 2013 as a smart information technology service provider with the aim of delivering business solutions to customers worldwide. Today, we are stretched across four continents with offices and customers in US, UK, UAE and Pakistan. With a strong workforce of more than 250 employees, the company has achieved remarkable milestones. Our gamut of services include software buildup, website development, mobile development, ecommerce store development, call center and customer support, cyber security, and startups assistance has made us an established and reputed brand name among foreign clients.</p>
                         </Grid>
                     </Grid>
-                    <div style={{paddingTop: 100, paddingBottom: 100}}>
+                    <div style={{paddingTop: 50, paddingBottom: 50}}>
                         <Team />
                     </div>
                 </Grid>
