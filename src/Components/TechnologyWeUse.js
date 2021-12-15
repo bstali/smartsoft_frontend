@@ -30,8 +30,8 @@ const useStyles = makeStyles({
     paddingBottom: 20,
   },
   img: {
-    width: "13vmin",
-    height: "7vmin"
+    width: "14vmin",
+    height: "8vmin"
   },
   headingTop: {
     fontFamily: "Montserrat, Helvetica Neue, Helvetica, Arial, sans-serif",
