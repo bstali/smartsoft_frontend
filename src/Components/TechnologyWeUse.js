@@ -11,8 +11,8 @@ import AndroidStudio from "../Asset/Images/PlatformImages/androidstudio.png";
 import Xcode from "../Asset/Images/PlatformImages/xcode.png";
 import MongoDb from "../Asset/Images/DatabaseImages/mongodb.png";
 import MySql from "../Asset/Images/DatabaseImages/mysql.png";
-import GoogleAnalytics from "../Asset/Images/GigitalMarketingImages/google-analytics.png";
-import GoogleAd from "../Asset/Images/GigitalMarketingImages/googleAd.png";
+import GoogleAnalytics from "../Asset/Images/DigitalMarketingImages/google-analytics.png";
+import GoogleAd from "../Asset/Images/DigitalMarketingImages/googleAd.png";
 import CodeIgniter from "../Asset/Images/FrameworksImages/codeigniter.png";
 // import InboxIcon from '@mui/icons-material/Inbox';
 // import HeightIcon from '@mui/icons-material/Height';
@@ -27,10 +27,11 @@ const useStyles = makeStyles({
     color: "#333333",
     margin: 0,
     textTransform: "uppercase",
+    paddingBottom: 20,
   },
   img: {
-    width: "15vmin",
-    height: "10vmin",
+    width: "13vmin",
+    height: "7vmin"
   },
   headingTop: {
     fontFamily: "Montserrat, Helvetica Neue, Helvetica, Arial, sans-serif",
@@ -41,7 +42,6 @@ const useStyles = makeStyles({
   },
   imagesDisplay: {
     display: "flex",
-    alignItems: "center",
     justifyContent: "center",
     wordSpacing: 5,
     paddingTop: 10,
@@ -54,35 +54,36 @@ export default function TechnologyWeUse() {
     <>
       <Grid
         container
-        direction="row"
-        justifyContent="center"
-        alignItems="center"
-        style={{ paddingBottom: 100, paddingTop: 100 }}
+        style={{ paddingBottom: 50, paddingTop: 100 }}
       >
         <Grid item xs={12}>
           <p className={classes.headingTop}>TECHNOLOGY WE USE</p>
         </Grid>
-        <Grid item xs={1}></Grid>
-        <Grid item xs={10} style={{ height: "100%", width: "100%" }}>
+        {/* <Grid item xs={1}></Grid> */}
+        <Grid item xs={12} style={{ height: "100%", width: "100%" }}>
           <Carousel
-            interval={3000}
+            interval={1500}
             animation="slide"
             swipe={true}
             IndicatorIcon={false}
             navButtonsAlwaysInvisible={true}
           >
-            <Grid style={{ paddingTop: 30 }} id="frameworks">
+            <Grid style={{ paddingTop: 50 }} id="frameworks">
               <p className={classes.subHeading}>Frameworks/Tools</p>
               <Grid className={classes.imagesDisplay}>
                 <img className={classes.img} src={Node} alt="Node" />
                 <img className={classes.img} src={ReactJS} alt="NextJS" />
+                &nbsp; &nbsp;
                 <img
-                  className={classes.img}
+                 className={classes.img}
                   src={ReactNative}
                   alt="React Native"
                 />
+                &nbsp; &nbsp;
                 <img className={classes.img} src={Unity} alt="Unity3D" />
+                {/* &nbsp; */}
                 <img className={classes.img} src={Xcode} alt="Xcode" />
+                {/* &nbsp; */}
                 <img
                   className={classes.img}
                   src={AndroidStudio}
@@ -93,9 +94,10 @@ export default function TechnologyWeUse() {
                   src={CodeIgniter}
                   alt="CodeIgniter"
                 />
+
               </Grid>
             </Grid>
-            <Grid style={{ paddingTop: 30 }} id="database">
+            <Grid style={{ paddingTop: 50 }} id="database">
               <p className={classes.subHeading}>Database</p>
               <Grid className={classes.imagesDisplay}>
                 <img className={classes.img} src={MongoDb} alt="MongoDb" />
@@ -103,7 +105,7 @@ export default function TechnologyWeUse() {
                 <img className={classes.img} src={MySql} alt="MySql" />
               </Grid>
             </Grid>
-            <Grid style={{ paddingTop: 30 }} id="infrastructure">
+            <Grid style={{ paddingTop: 50 }} id="infrastructure">
               <p className={classes.subHeading}>Infrastructure</p>
               <img
                 className={classes.img}
@@ -111,7 +113,7 @@ export default function TechnologyWeUse() {
                 alt="AmazonWebServices"
               />
             </Grid>
-            <Grid style={{ paddingTop: 30 }} id="DM">
+            <Grid style={{ paddingTop: 50 }} id="DM">
               <p className={classes.subHeading}>Digital Marketing</p>
               <Grid className={classes.imagesDisplay}>
                 <img
@@ -125,7 +127,7 @@ export default function TechnologyWeUse() {
             </Grid>
           </Carousel>
         </Grid>
-        <Grid item xs={1}></Grid>
+        {/* <Grid item xs={1}></Grid> */}
       </Grid>
     </>
   );
